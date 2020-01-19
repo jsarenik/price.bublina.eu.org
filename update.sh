@@ -16,3 +16,6 @@ do
 done | tee -a datapoints
 
 rm $TMP
+
+printf "Geterating price.html... "
+cat html/00* datapoints html/99* > dist/price.html && echo OK
