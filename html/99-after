@@ -1,0 +1,50 @@
+],
+    // options
+    {
+	labels: ["Date", "Bitcoin price (USD)"],
+	height: "900",
+	legend: "always",
+	logscale: true,
+	labelsDiv: document.getElementById('status'),
+	color: "green",
+	fillGraph: true,
+	yRangePad: 16,
+	axes: {
+	    y: {
+		axisLabelFormatter: formatter,
+		valueFormatter: formatter2,
+	    },
+	},
+    }
+  );
+</script>
+
+<p>
+This is the most <strong>comprehensive</strong> all-time Bitcoin price history
+chart you will find online. Updated daily.
+The chart is interactive:
+</p>
+
+<ul>
+    <li>Zoom: click-drag</li>
+    <li>Pan: shift-click-drag</li>
+    <li>Restore zoom level: double-click</li>
+</ul>
+
+<p>
+Price data begins on 2010-04-25 at $0.003/BTC, using the daily
+volume-weighted trading price of the first Bitcoin exchange,
+<a href="https://en.bitcoin.it/wiki/Bitcoin_Market"
+    >BitcoinMarket.com</a>
+(<a href="https://api.bitcoincharts.com/v1/csv/bcmPPUSD.csv.gz"
+    >PayPal USD trades</a>).
+It actually started operating on
+<a href="https://bitcointalk.org/index.php?topic=20.msg748#msg748"
+    >2010-03-17</a>,
+however trading data for the first few weeks is—to my knowledge—not available.
+Data for 2010-07-18 and later is from the
+<a href="https://www.coindesk.com/price/">CoinDesk BPI</a>.
+</p>
+
+</body>
+</html>
