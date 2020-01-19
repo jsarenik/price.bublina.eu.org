@@ -1,6 +1,5 @@
 <html>
 <head>
-    <link rel="stylesheet" href="assets/dygraph.min.css">
     <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="All-time Bitcoin price chart" />
