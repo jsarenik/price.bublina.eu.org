@@ -18,4 +18,4 @@ done | tee -a datapoints
 rm $TMP
 
 printf "Geterating index.html... "
-cat html/00* datapoints html/99* > price/index.html && echo OK
+cat html/00* datapoints html/99* > public/index.html && echo OK
