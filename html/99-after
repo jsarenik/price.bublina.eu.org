@@ -32,21 +32,33 @@ The chart is interactive:
 </ul>
 
 <p>
-Price data begins on 2010-04-25 at $0.003/BTC, using the daily
-volume-weighted trading price of the first Bitcoin exchange,
+Price data begins on 2009-10-05 at $0.000764/BTC which is the earliest exchange rate published by
+<a href="https://web.archive.org/web/20100428024753/http://newlibertystandard.wetpaint.com/page/2009+Exchange+Rate">New Liberty Standard</a>,
+the first Bitcoin exchange ($1.00 buys 1309.03 BTC.) The historical exchange rate for early 2010 is available at
+<a href="https://web.archive.org/web/20100301174241/http://newlibertystandard.wetpaint.com/page/Exchange+Rate">this other archived page</a>.
+The last known New Liberty Standard exchange rate is $0.005472/BTC on 2010-03-02.
+</p>
+
+<p>
+The market price of Bitcoin is established again on 2010-04-25 at $0.003/BTC, using the daily
+volume-weighted trading price of the second Bitcoin exchange,
 <a href="https://en.bitcoin.it/wiki/Bitcoin_Market"
     >BitcoinMarket.com</a>
 (<a href="https://api.bitcoincharts.com/v1/csv/bcmPPUSD.csv.gz"
     >PayPal USD trades</a>).
-It actually started operating on
+The owner, dwdollar, actually started operating it on
 <a href="https://bitcointalk.org/index.php?topic=20.msg748#msg748"
     >2010-03-17</a>,
 however trading data for the first few weeks is—to my knowledge—not available.
-Data for 2010-07-18 and later is from the
+</p>
+
+<p>
+The Bitcoin exchange rate for 2010-07-18 and later is from the
 <a href="https://www.coindesk.com/price/">CoinDesk BPI</a>.
 </p>
 
 <p>This all comes originally from <a href="http://bitcoin.zorinaq.com/price"
 >bitcoin.zorinaq.com/price</a>. Thank you, Marc!</p>
+    </article>
 </body>
 </html>

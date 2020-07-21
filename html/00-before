@@ -7,8 +7,20 @@
     <title>All-time Bitcoin price chart</title>
     <script type="text/javascript" src="assets/dygraph.min.js"></script>
     </script>
+<style>
+body {
+    color: #000;
+    background: #f0f0f0;
+}
+article {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
 </head>
 <body>
+    <article>
     <div id="status"></div>
     <div id="graphdiv" style="width: 1200px; max-width: 100%;"></div>
     <script type="text/javascript">
