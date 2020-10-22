@@ -1,28 +1,26 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="All-time Bitcoin price chart" />
     <meta property="og:image" content="https://bitcoin.zorinaq.com/price/snippet.png" />
     <title>All-time Bitcoin price chart</title>
-    <script type="text/javascript" src="assets/dygraph.min.js"></script>
-    </script>
-<style>
+<link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.css" />
+    <style>
 body {
     color: #000;
     background: #f0f0f0;
 }
-article {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
 </style>
 </head>
 <body>
-    <article>
+    <div class="container">
     <div id="status"></div>
-    <div id="graphdiv" style="width: 1200px; max-width: 100%;"></div>
+    <div id="graphdiv"></div>
+<script type="text/javascript" src="assets/dygraph.min.js"></script>
     <script type="text/javascript">
 function formatter(y) {
     if (y < 1)
