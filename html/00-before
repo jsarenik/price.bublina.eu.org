@@ -8,7 +8,6 @@
     <meta property="og:image" content="https://bitcoin.zorinaq.com/price/snippet.png" />
     <title>All-time Bitcoin price chart</title>
 <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.css" />
     <style>
 body {
     color: #000;
