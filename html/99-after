@@ -17,7 +17,14 @@
 	},
     }
   );
+if (screen.width < 800) {
+  gr = document.getElementById('graphdiv')
+  gr.style.height = '320px';
+}
+g.resize()
 </script>
+</div>
+<div class="container">
 
 <br>
 <p>

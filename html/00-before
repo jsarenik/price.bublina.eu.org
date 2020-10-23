@@ -16,7 +16,7 @@ body {
 </style>
 </head>
 <body>
-    <div class="container">
+    <div class="border-0">
     <div id="status"></div>
     <div id="graphdiv"></div>
 <script type="text/javascript" src="assets/dygraph.min.js"></script>
