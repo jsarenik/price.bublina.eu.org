@@ -70,7 +70,7 @@ DOMAIN_ID=$(echo $DOMAIN_ID | cut -d: -f2)
 apicmd GET "/zones/$DOMAIN_ID/dns_records?type=TXT" \
   | jq -r '.result | .[] | .name + ":" + .id' > $idsfile
 
-  name=_dnslink.$1.bublina.eu.org
+  name=_dnslink.$1
   content=dnslink=/ipfs/$2
   id_to_change=$(grep "^$name" $idsfile | cut -d: -f2)
 
