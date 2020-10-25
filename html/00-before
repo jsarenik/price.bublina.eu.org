@@ -40,4 +40,3 @@ function formatter2(y) {
     // containing div
     document.getElementById("graphdiv"),
     // data
-    [
