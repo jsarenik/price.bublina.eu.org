@@ -20,3 +20,4 @@ do
   updateremote random$i $NEWREF $OLDREF
 done
 ./dnslink-set.sh $DNS $NEWREF
+./dnslink-set.sh price.bublina.eu.org $NEWREF
