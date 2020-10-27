@@ -8,19 +8,10 @@ start=$(date -d "$last + 1 day" +%Y-%m-%d)
 today=$(date +%Y-%m-%d)
 TMP=$(mktemp)
 
-wget -q -O - "https://api.coindesk.com/v1/bpi/historical/close.json\
-?start=$start&end=$today" > $TMP
-
 test -r $FILE || echo "Date, value in USD" > $FILE
-
-jq -r '.bpi | keys_unsorted[]' $TMP | while read date
-do
-  PRICE=$(jq ".bpi[\"$date\"]" $TMP)
-  PRICE=$(printf "%.6f" $PRICE)
-  echo "$date, $PRICE"
-done | tee -a $FILE
-
 rm $TMP
 
+./update.sh
+./mkcsv.sh
 printf "Geterating index.html... "
 cat html/00* html/3* html/99* > public/index.html && cp $FILE public && echo OK
