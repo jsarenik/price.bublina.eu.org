@@ -1,7 +1,6 @@
 #!/bin/sh
 
 {
-echo "\"Date, value in USD\\\n\""
-cat datapoints | tr -d '[a-zA-Z"\[()\]' | cut -d, -f1-2 | cut -b2- \
-  | while read line; do echo "\"$line\\\n\""; done
-} > datapoints-inline.csv
+printf '"Date,value in USD\\n" +'
+cat datapoints | tr -d '[ a-zA-Z"\[()\]' | sed 's/,$//;s/.*/"&\\n" +/'
+} | sed '$s/\\n\" +$/\"/' | tr -d '\n' | sed 's/\" +\"//g'; echo ,;
