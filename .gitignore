@@ -1,3 +1,4 @@
 public/*.html
 public/*.csv
 datapoints.csv
+datapoints-inline.csv
