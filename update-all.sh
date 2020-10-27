@@ -6,5 +6,5 @@
 
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 cd $BINDIR
-./update-csv.sh
+./update.sh
 ./update-ipfs.sh
