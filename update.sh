@@ -19,5 +19,5 @@ done | tee -a datapoints
 
 rm $TMP
 
-printf "Geterating index.html... "
+printf "Generating index.html... "
 cat html/0* datapoints html/9* > public/index.html && echo OK

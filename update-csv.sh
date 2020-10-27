@@ -5,7 +5,7 @@ cd $BINDIR
 
 ./update.sh >/dev/null
 ./mkcsv.sh
-printf "Geterating index.html... "
+printf "Generating index.html... "
 cat html/00* html/3* html/99* > public/index.html \
   && cp datapoints.csv public \
   && echo OK
