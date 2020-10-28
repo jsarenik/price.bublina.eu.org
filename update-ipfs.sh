@@ -6,8 +6,7 @@
 DNS=pr.bublina.eu.org
 
 updateremote() {
-  ssh $1 ipfs pin add $2
-  ssh $1 ipfs pin rm $3
+  ssh $1 "ipfs pin add $2 && ipfs pin rm $3"
 }
 
 OLDREF=$(./dnslink.sh $DNS | cut -d/ -f3-)
@@ -17,7 +16,7 @@ test "$OLDREF" = "$NEWREF" && { echo "No change"; exit 1; }
 ipfs pin rm $OLDREF
 for i in $(seq 3)
 do
-  updateremote random$i $NEWREF $OLDREF
+  updateremote node$i $NEWREF $OLDREF
 done
 ./dnslink-set.sh $DNS $NEWREF
 ./dnslink-set.sh price.bublina.eu.org $NEWREF
