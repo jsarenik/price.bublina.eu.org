@@ -11,7 +11,7 @@ updateremote() {
 
 OLDREF=$(./dnslink.sh $DNS)
 NEWREF=$(ipfs add -Qr public)
-test "$OLDREF" = "$NEWREF" && { echo "No change"; exit 1; }
+test "${OLDREF##*/}" = "$NEWREF" && { echo "No change"; exit 1; }
 
 ipfs pin rm $OLDREF
 for i in $(seq 3)
