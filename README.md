@@ -5,6 +5,7 @@ The most comprehensive all-time Bitcoin price history chart. originally from htt
 
  * [jq](https://stedolan.github.io/jq/)
  * coreutils and bash will do, but [busybox](https://busybox.net/) is enough
+ * `dnslink` scripts need [dig](https://bind.isc.org/doc/arm/9.11/man.dig.html)
 
 ## How it works
 
