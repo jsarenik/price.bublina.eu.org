@@ -29,7 +29,7 @@ ipfsdo() {
 nodesdo() {
   for i in $(seq $NUMNODES)
   do
-    ipfsdo node$i $1 $2
+    ipfsdo node$i $1 $2 || return 1
   done
 }
 
@@ -79,11 +79,11 @@ EOF
 }
 
 OLDREF=$(dnslinkget $DNS)
-NEWREF=$(ipfs add -Qr $PUBLICDIR)
+NEWREF=$(ipfs add -Qr $PUBLICDIR) \
+  && echo "pinned $NEWREF recursively (local)"
 test "${OLDREF##*/}" = "$NEWREF" && { echo "No change"; exit 1; }
 
-echo "pinned $NEWREF recursively (local)"
-nodesdo add $NEWREF
-dnslinkset $DNS /ipfs/$NEWREF || exit 1
-ipfs pin rm $OLDREF
-nodesdo rm $OLDREF
+nodesdo add $NEWREF \
+  && dnslinkset $DNS /ipfs/$NEWREF \
+  && ipfs pin rm $OLDREF \
+  && nodesdo rm $OLDREF
