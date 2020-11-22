@@ -5,6 +5,7 @@
 # command="~/web/bitcoin.zorinaq.com/update-all.sh" ssh-ed25519 AAAAC3Nz...
 
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
+. $BINDIR/ssh-agent.sh
 cd $BINDIR
 ./update-csv-inline.sh
 ./update-ipfs.sh
