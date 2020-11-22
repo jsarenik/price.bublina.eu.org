@@ -16,8 +16,8 @@ The script `./update.sh` generates a static `public/index.html`
 file which resembles the original.
 
 The script `./update-csv-inline.sh` is the latest addition.
-It generates the `public/index.html` which is smaller than
-the original way.
+It generates the `public/index.html` which is smaller compared
+to the one generated using the original way.
 
 To update IPFS, `./update-ipfs.sh` script can be used.
 
