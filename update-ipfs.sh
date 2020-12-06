@@ -80,9 +80,10 @@ EOF
     && echo OK || { echo error; return 1; }
 }
 
-OLDREF=$(dnslinkget $DNS)
 NEWREF=$(ipfs add -Qr $PUBLICDIR) \
-  && echo "pinned $NEWREF recursively (local)"
+  && echo "pinned $NEWREF recursively (local)" \
+  || exit 1
+OLDREF=$(dnslinkget $DNS)
 test "${OLDREF##*/}" = "$NEWREF" && { echo "No change"; exit 1; }
 
 nodesdo add $NEWREF || exit 1
