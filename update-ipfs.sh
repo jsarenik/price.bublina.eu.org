@@ -3,6 +3,8 @@
 # ipfs daemon should be running on the machine
 # where this script is run
 
+test -n "$DEBUG" && set -x
+
 PUBLICDIR=public
 NUMNODES=3
 DNS=price.bublina.eu.org
