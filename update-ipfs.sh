@@ -5,20 +5,24 @@
 
 test -n "$DEBUG" && set -x
 
+a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
+URC=$BINDIR/update-ipfs.conf
+
+# Default values
 PUBLICDIR=public
 NUMNODES=3
-DNS=price.bublina.eu.org
+test -r $URC && . $URC
+test -n "$DNS" || { echo "DNS not set in $URC! Exiting." >&2; exit 1; }
 
 SPFTRC=$HOME/.spf-toolsrc
 # Read TOKEN
 test -r $SPFTRC && . $SPFTRC
-test -n "$TOKEN" || { echo "TOKEN not set! Exiting." >&2; exit 1; }
+test -n "$TOKEN" || { echo "TOKEN not set in $SPFTRC! Exiting." >&2; exit 1; }
 
 idsfile=$(mktemp /tmp/cloudflare-ids-XXXXXX)
 zonefile=$(mktemp /tmp/cloudflare-zone-XXXX)
 
 trap "rm -f $idsfile $zonefile $zonefile-data" EXIT
-a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 for cmd in jq grep
 do
   type $cmd >&2 || exit 1
