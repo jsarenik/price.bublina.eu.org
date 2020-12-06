@@ -57,6 +57,9 @@ apicmd() {
 }
 
 dnslinkset() {
+  name=_dnslink.$1
+  content="dnslink=$2"
+
   APIURL="https://api.cloudflare.com/client/v4"
 
   DOMAIN_ID=$(apicmd GET /zones | jq -r '.result | .[] | .name + ":" + .id' \
@@ -64,11 +67,10 @@ dnslinkset() {
     || exit 1
   DOMAIN_ID=$(echo $DOMAIN_ID | cut -d: -f2)
 
-  apicmd GET "/zones/$DOMAIN_ID/dns_records?type=TXT" \
+  apicmd GET "/zones/$DOMAIN_ID/dns_records?type=TXT&name=$name&per_page=100" \
     | jq -r '.result | .[] | .name + ":" + .id' > $idsfile
 
-  name=_dnslink.$1
-  content=dnslink=$2
+  grep $name $idsfile || exit 1
   id_to_change=$(grep "^$name" $idsfile | cut -d: -f2)
 
   echo -n "Changing $name with id $id_to_change... "
