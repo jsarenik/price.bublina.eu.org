@@ -7,7 +7,7 @@ Originally from https://bitcoin.zorinaq.com/price/
  * [jq](https://stedolan.github.io/jq/)
  * coreutils and bash will do,
    but [busybox](https://busybox.net/) is enough
- * `update-upfs.sh` script requires
+ * `update-ipfs.sh` script requires
    [dig](https://bind.isc.org/doc/arm/9.11/man.dig.html)
 
 ## How it works
