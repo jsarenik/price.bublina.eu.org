@@ -37,4 +37,4 @@ they are my, slightly distributed nodes running IPFS daemon.
 In `.ssh/config` they are set to real hostnames and it is easy to just
 increment the counter. Anyone can set their own hosts running IPFS
 daemon in SSH config file to match. Then set `update-ipfs.conf`
-accordingly (if the number of your nodes vary).
+accordingly (if the number of your nodes varies).
