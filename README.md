@@ -1,4 +1,4 @@
-# price.bublina.eu.org
+# [price.bublina.eu.org](https://price.bublina.eu.org)
 The most comprehensive all-time Bitcoin price history chart.
 Originally from https://bitcoin.zorinaq.com/price/
 
