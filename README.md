@@ -31,3 +31,9 @@ to `cloudflare-ipfs.com` and the `TXT` record
 ```
 10 9 * * * $HOME/web/bitcoin.zorinaq.com/update-all.sh
 ```
+
+The `node1`, `node2` and `node3` nodes are actually not Cloudflare,
+they are my, slightly distributed nodes running IPFS. In `.ssh/config`
+they are set to real hostnames, but I find it very usable to just
+increment the counter. It can be also used by anyone, you just make
+an SSH config file record for your hosts running IPFS to match.
