@@ -33,7 +33,8 @@ to `cloudflare-ipfs.com` and the `TXT` record
 ```
 
 The `node1`, `node2` and `node3` nodes are actually not Cloudflare,
-they are my, slightly distributed nodes running IPFS. In `.ssh/config`
-they are set to real hostnames, but I find it very usable to just
-increment the counter. It can be also used by anyone, you just make
-an SSH config file record for your hosts running IPFS to match.
+they are my, slightly distributed nodes running IPFS daemon.
+In `.ssh/config` they are set to real hostnames and it is easy to just
+increment the counter. Anyone can set their own hosts running IPFS
+daemon in SSH config file to match. Then set `uptade-ipfs.conf`
+accordingly (if the number of your nodes vary).
