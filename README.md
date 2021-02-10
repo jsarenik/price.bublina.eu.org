@@ -9,6 +9,8 @@ Originally from https://bitcoin.zorinaq.com/price/
    but [busybox](https://busybox.net/) is enough
  * `update-ipfs.sh` script requires
    [dig](https://bind.isc.org/doc/arm/9.11/man.dig.html)
+ * if used with IPSF, then [ipfs](https://dist.ipfs.io/#go-ipfs)
+   needs to be installed and accessible in `PATH`.
 
 ## How it works
 
@@ -38,3 +40,6 @@ In `.ssh/config` they are set to real hostnames and it is easy to just
 increment the counter. Anyone can set their own hosts running IPFS
 daemon in SSH config file to match. Then set `update-ipfs.conf`
 accordingly (if the number of your nodes varies).
+
+Note that the `PATH` needs to be set properly so that both `jq`
+and `ipfs` can be found.
