@@ -95,6 +95,7 @@ OLDREF=$(dnslinkget $DNS)
 test "${OLDREF##*/}" = "$NEWREF" && { echo "No change"; exit 1; }
 
 nodesdo add $NEWREF || exit 1
+./update-pinata.sh $NEWREF ${OLDREF##*/}
 dnslinkset $DNS /ipfs/$NEWREF || exit 1
 ipfs pin rm $OLDREF
 nodesdo rm $OLDREF
