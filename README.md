@@ -48,5 +48,5 @@ accordingly (if the number of your nodes varies).
 Note that the `PATH` needs to be set properly so that both `jq`
 and `ipfs` can be found.
 
-On 2021-02-22 the _Bot Fight Mode_ feature of Cloudflare was turned off
-for domain bublina.eu.org. Find it in `Firewall → Tools`.
+On 2021-02-22 the Firewall → Tools → [_Bot Fight Mode_](https://www.cloudflare.com/products/bot-management)
+feature of Cloudflare was turned off for domain bublina.eu.org.
