@@ -13,7 +13,7 @@ http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/
    but [busybox](https://busybox.net/) is enough
  * `update-ipfs.sh` script requires
    [dig](https://bind.isc.org/doc/arm/9.11/man.dig.html)
- * if used with IPSF, then [ipfs](https://dist.ipfs.io/#go-ipfs)
+ * if used with IPFS, then [ipfs](https://dist.ipfs.io/#go-ipfs)
    needs to be installed and accessible in `PATH`.
 
 ## How it works
