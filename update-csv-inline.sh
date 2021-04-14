@@ -3,8 +3,8 @@
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 cd $BINDIR
 
-./update.sh >/dev/null
-printf "Generating index.html... "
+./update.sh || exit 1
+printf "Generating inline index.html... "
 {
 cat html/00*
 ./mkcsv-inline.sh

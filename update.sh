@@ -10,14 +10,16 @@ TMP=$(mktemp)
 wget -q -O - "https://api.coindesk.com/v1/bpi/historical/close.json\
 ?start=$start&end=$today" > $TMP
 
+echo "Updating datapoints..."
 jq -r '.bpi | keys_unsorted[]' $TMP | while read date
 do
   PRICE=$(jq ".bpi[\"$date\"]" $TMP)
   PRICE=$(printf "%.6f" $PRICE)
   echo "[new Date(\"$date\"), $PRICE],"
-done | tee -a datapoints
+done | tee -a datapoints | grep . && echo ...datapoints update done. || EXIT=1
 
 rm $TMP
+test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
 
 printf "Generating index.html... "
 cat html/0* datapoints html/9* > public/index.html && echo OK
