@@ -16,11 +16,13 @@
 	},
     }
   );
-//if (screen.width < 800) {
-  gr = document.getElementById('graphdiv')
+gr = document.getElementById('graphdiv')
+if (screen.width > screen.height) {
   gr.style.height = screen.height/1.2 + 'px';
-  gr.style.width = screen.width/1.02 + 'px';
-//}
+} else {
+  gr.style.height = screen.height/2 + 'px';
+}
+gr.style.width = screen.width/1.02 + 'px';
 g.resize()
 </script>
 </div>
@@ -41,9 +43,7 @@ The chart is interactive:
     <li>Restore zoom level: double-click</li>
 </ul>
 
-<p><a href="https://github.com/jsarenik/price.bublina.eu.org">See the source</a>
-and also the <a href="https://bitcoin.zorinaq.com/price"
->original</a>.</p>
+<p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
     </div>
 </body>
 </html>

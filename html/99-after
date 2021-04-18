@@ -17,7 +17,11 @@
     }
   );
 gr = document.getElementById('graphdiv')
-gr.style.height = screen.height/1.2 + 'px';
+if (screen.width > screen.height) {
+  gr.style.height = screen.height/1.2 + 'px';
+} else {
+  gr.style.height = screen.height/2 + 'px';
+}
 gr.style.width = screen.width/1.02 + 'px';
 g.resize()
 </script>
