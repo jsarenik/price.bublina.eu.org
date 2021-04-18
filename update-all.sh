@@ -8,4 +8,4 @@ a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 . $BINDIR/ssh-agent.sh
 cd $BINDIR
 ./update-csv-inline.sh
-./update-ipfs.sh
+./update-hafuch.sh

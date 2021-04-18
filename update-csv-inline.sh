@@ -3,7 +3,7 @@
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 cd $BINDIR
 
-./update.sh || exit 1
+./update.sh
 printf "Generating inline index.html... "
 {
 cat html/00*

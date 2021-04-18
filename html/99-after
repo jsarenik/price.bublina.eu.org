@@ -16,10 +16,9 @@
 	},
     }
   );
-if (screen.width < 800) {
-  gr = document.getElementById('graphdiv')
-  gr.style.height = '320px';
-}
+gr = document.getElementById('graphdiv')
+gr.style.height = screen.height/1.2 + 'px';
+gr.style.width = screen.width/1.02 + 'px';
 g.resize()
 </script>
 </div>
@@ -66,7 +65,10 @@ The Bitcoin exchange rate for 2010-07-18 and later is from the
 
 <p><a href="https://github.com/jsarenik/price.bublina.eu.org">All this</a>
 comes originally from <a href="https://bitcoin.zorinaq.com/price"
->bitcoin.zorinaq.com/price</a>. Thank you, Marc!</p>
+>bitcoin.zorinaq.com/price</a>. Thank you, Marc!
+</p>
+
+<p>UPDATE: See also <a href="hafuch.html">hafuch</a>.</p>
     </div>
 </body>
 </html>
