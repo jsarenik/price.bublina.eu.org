@@ -1,5 +1,6 @@
 #!/bin/sh
 
-./update-csv-inline.sh
-./update-hafuch.sh
+./update-datapoints.sh
+./gen-inline.sh
+./gen-hafuch.sh
 rsync -a --delete . hd4:web/price/

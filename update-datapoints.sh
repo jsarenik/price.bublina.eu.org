@@ -20,6 +20,3 @@ done | tee -a datapoints | grep . && echo ...datapoints update done. || EXIT=1
 
 rm $TMP
 test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
-
-printf "Generating index.html... "
-cat html/0* datapoints html/9* > public/index.html && echo OK

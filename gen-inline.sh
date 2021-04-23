@@ -1,9 +1,8 @@
 #!/bin/sh
 
-a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
-cd $BINDIR
+a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
+cd "$BINDIR" || exit
 
-./update.sh
 printf "Generating inline index.html... "
 {
 cat html/00*
