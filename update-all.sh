@@ -9,3 +9,5 @@ cd "$BINDIR" || exit
 ./update-datapoints.sh
 ./gen-inline.sh
 ./gen-hafuch.sh
+./gen-variant.sh monthly
+./gen-variant.sh yearly

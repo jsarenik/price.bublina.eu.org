@@ -1,0 +1,46 @@
+    // options
+    {
+	labels: ["Date", "1k USD to bitcoin (log scale)"],
+	height: "600",
+	legend: "always",
+	logscale: true,
+	labelsDiv: document.getElementById('status'),
+	color: "green",
+	fillGraph: true,
+	yRangePad: 16,
+	axes: {
+	    y: {
+		axisLabelFormatter: formatter,
+		valueFormatter: formatter2,
+	    },
+	},
+    }
+  );
+gr = document.getElementById('graphdiv')
+if (screen.width > screen.height) {
+  gr.style.height = screen.height/1.2 + 'px';
+} else {
+  gr.style.height = screen.height/2 + 'px';
+}
+gr.style.width = screen.width/1.02 + 'px';
+g.resize()
+</script>
+</div>
+<div class="container">
+
+<br>
+<p>
+<strong>How much did Bitcoin cost on 1st January each month?</strong>
+The chart is interactive:
+</p>
+
+<ul>
+    <li>Zoom: click-drag</li>
+    <li>Pan: shift-click-drag</li>
+    <li>Restore zoom level: double-click</li>
+</ul>
+
+<p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
+    </div>
+</body>
+</html>
