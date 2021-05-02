@@ -1,0 +1,33 @@
+{
+  default_sni price.bublina.eu.org
+}
+
+(basic) {
+  encode zstd gzip
+  header {
+    Strict-Transport-Security "max-age=31536000; preload; includeSubdomains"
+    X-XSS-Protection "1; mode=block"
+    Content-Security-Policy "default-src 'self' bublina.eu.org *.bublina.eu.org 'nonce-JJqrmpSvK9nmR4Z5syyJ4sFfoDkqoqfK'; style-src 'self'; connect-src 'self'"
+    X-Frame-Options "DENY"
+    X-Content-Type-Options "nosniff"
+    Referrer-Policy no-referrer
+  }
+}
+
+(basicfile) {
+  file_server {
+    index index.html index.txt
+  }
+}
+
+price.bublina.eu.org {
+  @static {
+    path /favicon.ico /assets/*
+  }
+  handle @static {
+     header Cache-Control "max-age=31536000"
+  }
+  import basic
+  import basicfile
+  root * /path/to/price.bublina.eu.org/public
+}
