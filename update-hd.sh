@@ -1,4 +1,4 @@
 #!/bin/sh
 
 ./update-all.sh
-rsync -a --delete . hd4:web/price/
+rsync -a --delete . singer:web/price/
