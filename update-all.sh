@@ -12,3 +12,4 @@ cd "$BINDIR" || exit
 ./gen-hafuch-linear.sh
 ./gen-variant.sh monthly
 ./gen-variant.sh yearly
+./gen-linear.sh
