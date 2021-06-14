@@ -1,6 +1,6 @@
     // options
     {
-	labels: ["Date", "1k USD to bitcoin (log scale)"],
+	labels: ["Date", "Bitcoin price (USD)"],
 	height: "600",
 	legend: "always",
 	logscale: true,
