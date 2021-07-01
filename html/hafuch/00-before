@@ -8,7 +8,7 @@
     <meta property="og:title" content="All-time 1k USD to bitcoin price chart" />
     <title>All-time 1k USD to bitcoin price chart</title>
 <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
-    <style nonce="JJqrmpSvK9nmR4Z5syyJ4sFfoDkqoqfK">
+    <style>
 body {
     color: #000;
     background: #f0f0f0;
@@ -20,7 +20,7 @@ body {
     <div id="status"></div>
     <div id="graphdiv"></div>
 <script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-Siw62Hkn0S0jBTE5nHbjlPvg2soIqKgOnp4qUW49Pz5sOjEOue5d6NzCydyTsd2n"></script>
-    <script nonce="JJqrmpSvK9nmR4Z5syyJ4sFfoDkqoqfK" type="text/javascript">
+    <script type="text/javascript">
 function formatter(y) {
     if (y < 1)
 	return '₿' + y.toFixed(4);
