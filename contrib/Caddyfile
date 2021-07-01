@@ -7,7 +7,7 @@
   header {
     Strict-Transport-Security "max-age=31536000; preload; includeSubdomains"
     X-XSS-Protection "1; mode=block"
-    Content-Security-Policy "default-src 'self' bublina.eu.org *.bublina.eu.org 'nonce-JJqrmpSvK9nmR4Z5syyJ4sFfoDkqoqfK'; style-src 'self'; connect-src 'self'"
+#    Content-Security-Policy "default-src 'self' bublina.eu.org *.bublina.eu.org 'nonce-JJqrmpSvK9nmR4Z5syyJ4sFfoDkqoqfK'; style-src 'self'; connect-src 'self'"
     X-Frame-Options "DENY"
     X-Content-Type-Options "nosniff"
     Referrer-Policy no-referrer
