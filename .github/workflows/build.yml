@@ -1,6 +1,14 @@
 ---
 name: CI
-on: [push, pull_request, workflow_dispatch]
+on:
+  schedule:
+    - cron: 10 7 * * *
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
 jobs:
   # This workflow contains a single job called "build"
   build:
