@@ -1,5 +1,11 @@
 #!/bin/sh
 
+type bc && BC=bc || {
+  wget https://busybox.net/downloads/binaries/1.31.0-defconfig-multiarch-musl/busybox-x86_64
+  chmod a+x busybox-x86_64
+  BC="$PWD/busybox-x86_64 bc"
+}
+
 {
 { 
 ./mkcsv.sh | cut -d, -f1 > /tmp/dates$$
@@ -9,7 +15,7 @@
   do
     echo "a=$line; 1000/a;"
   done
-} | bc | while read line;
+} | $BC | while read line;
   do printf "%.8f\n" $line; done \
     | paste -d, /tmp/dates$$ -
 rm /tmp/dates$$
