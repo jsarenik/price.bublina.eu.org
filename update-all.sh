@@ -15,5 +15,6 @@ cd "$BINDIR" || exit
 ./gen-linear.sh
 
 echo "$NETLIFY_URL" | grep -q ^https && {
+   echo DEBUG
    curl -X POST -d {} $NETLIFY_URL && echo Netlify triggered
 }
