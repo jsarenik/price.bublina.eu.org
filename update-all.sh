@@ -17,4 +17,4 @@ cd "$BINDIR" || exit
 echo "$NETLIFY_URL" | grep -q ^https && {
    echo DEBUG
    curl -X POST -d {} $NETLIFY_URL && echo Netlify triggered
-}
+} || echo "Netlify deployment not run"
