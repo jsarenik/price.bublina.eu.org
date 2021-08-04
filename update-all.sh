@@ -13,3 +13,7 @@ cd "$BINDIR" || exit
 ./gen-variant.sh monthly
 ./gen-variant.sh yearly
 ./gen-linear.sh
+
+echo "$NETLIFY_URL" | grep -q ^https && {
+   curl -X POST -d {} $NETLIFY_URL && echo Netlify triggered
+}
