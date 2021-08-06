@@ -75,8 +75,9 @@ comes originally from <a href="https://bitcoin.zorinaq.com/price"
 <a href="linear.html">linear</a>,
 <a href="hafuch-linear.html">hafuch-linear</a>,
 <a href="monthly.html">monthly</a>,
-<a href="yearly.html">yearly</a>
-and <a href="low.html">low</a>.</p>
+<a href="yearly.html">yearly</a>,
+<a href="monthly-low.html">monthly-low</a>
+and <a href="yearly-low.html">yearly-low</a>.</p>
     </div>
 </body>
 </html>
