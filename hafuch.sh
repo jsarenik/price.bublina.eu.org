@@ -11,7 +11,7 @@ type bc >/dev/null 2>&1 && BC=bc || {
 
 {
 { 
-./mkcsv.sh | cut -d, -f1 > /tmp/dates$$
+cat datapoints | ./mkcsv.sh | cut -d, -f1 > /tmp/dates$$
 {
   echo "scale=8;"
   ./mkcsv.sh | cut -d, -f2 | while read line
