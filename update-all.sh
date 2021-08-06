@@ -12,6 +12,7 @@ cd "$BINDIR" || exit
 ./gen-hafuch-linear.sh
 ./gen-variant.sh monthly
 ./gen-variant.sh yearly
+./gen-variant.sh low
 ./gen-linear.sh
 
 echo "$NETLIFY_URL" | grep -q ^https && {

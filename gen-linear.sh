@@ -8,7 +8,7 @@ test -d html/$VARIANT || exit 1
 printf "Generating inline $VARIANT.html... "
 {
 cat html/$VARIANT/00*
-./mkcsv-inline.sh
+cat datapoints | ./mkcsv-inline.sh
 cat html/$VARIANT/99*
 } > public/$VARIANT.html \
   && echo OK
