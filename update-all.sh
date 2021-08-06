@@ -13,6 +13,7 @@ cd "$BINDIR" || exit
 ./gen-variant.sh monthly
 ./gen-variant.sh yearly
 ./gen-variant.sh yearly-low
+cp public/yearly-low.html public/low.html
 ./gen-variant.sh monthly-low
 ./gen-linear.sh
 
