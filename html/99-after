@@ -66,18 +66,32 @@ The Bitcoin exchange rate for 2010-07-18 and later is from the
 <a href="https://www.coindesk.com/price/">CoinDesk BPI</a>.
 </p>
 
-<p><a href="https://github.com/jsarenik/price.bublina.eu.org">All this</a>
+<hr>
+
+<p>All above
 comes originally from <a href="https://bitcoin.zorinaq.com/price"
 >bitcoin.zorinaq.com/price</a>. Thank you, Marc!
 </p>
 
-<p>UPDATE: See also <a href="hafuch.html">hafuch</a>,
-<a href="linear.html">linear</a>,
-<a href="hafuch-linear.html">hafuch-linear</a>,
-<a href="monthly.html">monthly</a>,
-<a href="yearly.html">yearly</a>,
-<a href="monthly-low.html">monthly-low</a>
-and <a href="yearly-low.html">yearly-low</a>.</p>
+<p>All the sources and the data used to generate this site are kept in
+<a href="https://github.com/jsarenik/price.bublina.eu.org">a git
+repository on Github</a>. Have a look and feel free to file
+<a href="https://github.com/jsarenik/price.bublina.eu.org/issues">an issue</a>
+or send
+<a href="https://github.com/jsarenik/price.bublina.eu.org/pulls">a PR</a>.</p>
+
+<h2>Variants</h2>
+<p>See also following variants:</p>
+<p>
+<ul>
+<li><a href="linear.html">linear</a></li>
+<li><a href="hafuch.html">hafuch</a> (and <a href="hafuch-linear.html">hafuch-linear</a>)</li>
+<li><a href="monthly.html">monthly</a></li>
+<li><a href="yearly.html">yearly</a></li>
+<li><a href="monthly-low.html">monthly-low</a></li>
+<li><a href="yearly-low.html">yearly-low</a></li>
+</ul>
+</p>
     </div>
 </body>
 </html>
