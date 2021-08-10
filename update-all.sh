@@ -6,6 +6,7 @@
 
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
 cd "$BINDIR" || exit
+date
 ./update-datapoints.sh
 ./gen-inline.sh
 ./gen-hafuch.sh
