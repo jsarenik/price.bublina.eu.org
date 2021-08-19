@@ -1,6 +1,6 @@
     // options
     {
-	labels: ["Date", "Bitcoin price (USD) each month"],
+	labels: ["Date", "Bitcoin price (USD) on 1st January each year"],
 	height: "600",
 	legend: "always",
 	logscale: true,
@@ -29,7 +29,7 @@ g.resize()
 
 <br>
 <p>
-<strong>How much did Bitcoin cost on 1st each month?</strong>
+<strong>How much did Bitcoin cost on 1st January each year?</strong>
 The chart is interactive:
 </p>
 
