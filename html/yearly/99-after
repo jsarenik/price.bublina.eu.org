@@ -1,6 +1,6 @@
     // options
     {
-	labels: ["Date", "Bitcoin price (USD) on 1st January each year"],
+	labels: ["Date", "Bitcoin price (USD) each year"],
 	height: "600",
 	legend: "always",
 	logscale: true,
