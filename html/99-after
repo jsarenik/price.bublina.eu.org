@@ -73,6 +73,14 @@ comes originally from <a href="https://bitcoin.zorinaq.com/price"
 >bitcoin.zorinaq.com/price</a>. Thank you, Marc!
 </p>
 
+<p>The notable change compared to the original is that two ancient
+datapoints were added and they show that the genesis block was mined
+on 2009-01-03 and until 2009-10-04 (the day before the first
+real price is recorded on this chart) the price was zero. This change
+also nicely offsets the Y-axis values of the logarithmic chart
+making it much more human-readable.
+</p>
+
 <p>All the sources and the data used to generate this site are kept in
 <a href="https://github.com/jsarenik/price.bublina.eu.org">a git
 repository on Github</a>. Have a look and feel free to file
