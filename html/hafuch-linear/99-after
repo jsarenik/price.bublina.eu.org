@@ -30,7 +30,7 @@ g.resize()
 <br>
 <p>
 This reverse-chart uses as its source the daily data of Bitcoin price
-in USD but asks question
+in USD (excluding the zero values since genesis block) but asks question
 <strong>How much bitcoin could one buy for 1000 (one thousand) USD?</strong>
 Updated daily. The chart uses linear scale becase many reports about the value
 of bitcoin use linear scale as well.
