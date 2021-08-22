@@ -11,10 +11,12 @@ type bc >/dev/null 2>&1 && BC=bc || {
 
 {
 { 
-cat datapoints | ./mkcsv.sh | cut -d, -f1 > /tmp/dates$$
+cat datapoints \
+  | grep -v "0.000001.,$" \
+  | ./mkcsv.sh | cut -d, -f1 > /tmp/dates$$
 {
   echo "scale=8;"
-  ./mkcsv.sh | cut -d, -f2 | while read line
+  grep -v "0.000001.,$" | ./mkcsv.sh | cut -d, -f2 | while read line
   do
     echo "a=$line; 1000/a;"
   done
