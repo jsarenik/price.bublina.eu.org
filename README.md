@@ -9,14 +9,18 @@ http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/
 ## Requirements
 
  * [jq](https://stedolan.github.io/jq/)
- * coreutils and bash will do,
-   but [busybox](https://busybox.net/) is enough
+ * `coreutils` and `bash` will do,
+   but [`busybox`](https://busybox.net/) is enough
 
 ## How it works
 
-The script `./update-datapoints.sh` updates `datapoints` and
-should be run before anything else in order to use current data.
+The script `./update-datapoints.sh` updates `datapoints` file
+and should be run before anything else in order to use
+the current data.
 
+In order to update the datapoints along with all the implemented
+chart variants, simply run `./update-all.sh` and find the output
+in the `public` directory.
 
 `./gen-inline.sh` generates a static `public/index.html`
 file which contains all the space-efficient CSV values
