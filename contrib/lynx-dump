@@ -17,6 +17,30 @@
    trading data for the first few weeks is—to my knowledge—not available.
 
    After 2010-07-18 the Bitcoin exchange rate is from the [6]CoinDesk BPI.
+     __________________________________________________________________
+
+   All above comes originally from [7]bitcoin.zorinaq.com/price. Thank
+   you, Marc!
+
+   The notable change compared to the original is that two ancient
+   datapoints were added and they show that the genesis block was mined on
+   2009-01-03 and until 2009-10-04 (the day before the first real price is
+   recorded on this chart) the price was zero. This change also nicely
+   offsets the Y-axis values of the logarithmic chart making it much more
+   human-readable.
+
+   All the sources and the data used to generate this site are kept in
+   [8]a git repository on Github. Have a look and feel free to file [9]an
+   issue or send [10]a PR.
+
+Variants
+
+   See also following variants:
+
+     * [11]linear
+     * [12]hafuch (and [13]hafuch-linear)
+     * [14]monthly ([15]low)
+     * [16]yearly ([17]low)
 
 References
 
@@ -26,3 +50,14 @@ References
    4. https://api.bitcoincharts.com/v1/csv/bcmPPUSD.csv.gz
    5. https://bitcointalk.org/index.php?topic=20.msg748#msg748
    6. https://www.coindesk.com/price/bitcoin
+   7. https://bitcoin.zorinaq.com/price
+   8. https://github.com/jsarenik/price.bublina.eu.org
+   9. https://github.com/jsarenik/price.bublina.eu.org/issues
+  10. https://github.com/jsarenik/price.bublina.eu.org/pulls
+  11. https://price.bublina.eu.org/linear.html
+  12. https://price.bublina.eu.org/hafuch.html
+  13. https://price.bublina.eu.org/hafuch-linear.html
+  14. https://price.bublina.eu.org/monthly.html
+  15. https://price.bublina.eu.org/monthly-low.html
+  16. https://price.bublina.eu.org/yearly.html
+  17. https://price.bublina.eu.org/yearly-low.html
