@@ -41,15 +41,16 @@ The chart is interactive:
 </ul>
 
 <p>
-Price data begins on 2009-10-05 at $0.000764/BTC which is the earliest exchange rate published by
-<a href="https://web.archive.org/web/20100428024753/http://newlibertystandard.wetpaint.com/page/2009+Exchange+Rate">New Liberty Standard</a>,
-the first Bitcoin exchange ($1.00 buys 1309.03 BTC.) The historical exchange rate for early 2010 is available at
-<a href="https://web.archive.org/web/20100301174241/http://newlibertystandard.wetpaint.com/page/Exchange+Rate">this other archived page</a>.
-The last known New Liberty Standard exchange rate is $0.005472/BTC on 2010-03-02.
+On 2009-10-05 the market price of Bitcoin is first established at $0.000764/BTC
+by New Liberty Standard, the first Bitcoin exchange ($1.00 buys 1309.03 BTC.)
+The exchange rate history is available at two archived pages:
+<a href="https://web.archive.org/web/20100428024753/http://newlibertystandard.wetpaint.com/page/2009+Exchange+Rate">first</a>,
+<a href="https://web.archive.org/web/20100301174241/http://newlibertystandard.wetpaint.com/page/Exchange+Rate">second</a>.
+Their last known exchange rate is $0.005472/BTC on 2010-03-02.
 </p>
 
 <p>
-The market price of Bitcoin is established again on 2010-04-25 at $0.003/BTC, using the daily
+On 2010-04-25 the market price is established again at $0.003/BTC, using the daily
 volume-weighted trading price of the second Bitcoin exchange,
 <a href="https://en.bitcoin.it/wiki/Bitcoin_Market"
     >BitcoinMarket.com</a>
@@ -62,7 +63,7 @@ however trading data for the first few weeks is—to my knowledge—not availabl
 </p>
 
 <p>
-The Bitcoin exchange rate for 2010-07-18 and later is from the
+After 2010-07-18 the Bitcoin exchange rate is from the
 <a href="https://www.coindesk.com/price/bitcoin">CoinDesk BPI</a>.
 </p>
 
@@ -99,5 +100,6 @@ or send
 </ul>
 </p>
     </div>
+</article>
 </body>
 </html>
