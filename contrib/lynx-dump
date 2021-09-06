@@ -4,40 +4,19 @@
      * Pan: shift-click-drag
      * Restore zoom level: double-click
 
-   Price data begins on 2009-10-05 at $0.000764/BTC which is the earliest
-   exchange rate published by [1]New Liberty Standard, the first Bitcoin
-   exchange ($1.00 buys 1309.03 BTC.) The historical exchange rate for
-   early 2010 is available at [2]this other archived page. The last known
-   New Liberty Standard exchange rate is $0.005472/BTC on 2010-03-02.
+   On 2009-10-05 the market price of Bitcoin is first established at
+   $0.000764/BTC by New Liberty Standard, the first Bitcoin exchange
+   ($1.00 buys 1309.03 BTC.) The exchange rate history is available at two
+   archived pages: [1]first, [2]second. Their last known exchange rate is
+   $0.005472/BTC on 2010-03-02.
 
-   The market price of Bitcoin is established again on 2010-04-25 at
-   $0.003/BTC, using the daily volume-weighted trading price of the second
-   Bitcoin exchange, [3]BitcoinMarket.com ([4]PayPal USD trades). The
-   owner, dwdollar, actually started operating it on [5]2010-03-17,
-   however trading data for the first few weeks is—to my knowledge—not
-   available.
+   On 2010-04-25 the market price is established again at $0.003/BTC,
+   using the daily volume-weighted trading price of the second Bitcoin
+   exchange, [3]BitcoinMarket.com ([4]PayPal USD trades). The owner,
+   dwdollar, actually started operating it on [5]2010-03-17, however
+   trading data for the first few weeks is—to my knowledge—not available.
 
-   The Bitcoin exchange rate for 2010-07-18 and later is from the
-   [6]CoinDesk BPI.
-     __________________________________________________________________
-
-   All above comes originally from [7]bitcoin.zorinaq.com/price. Thank
-   you, Marc!
-
-   All the sources and the data used to generate this site are kept in
-   [8]a git repository on Github. Have a look and feel free to file [9]an
-   issue or send [10]a PR.
-
-Variants
-
-   See also following variants:
-
-     * [11]linear
-     * [12]hafuch (and [13]hafuch-linear)
-     * [14]monthly
-     * [15]yearly
-     * [16]monthly-low
-     * [17]yearly-low
+   After 2010-07-18 the Bitcoin exchange rate is from the [6]CoinDesk BPI.
 
 References
 
@@ -46,15 +25,4 @@ References
    3. https://en.bitcoin.it/wiki/Bitcoin_Market
    4. https://api.bitcoincharts.com/v1/csv/bcmPPUSD.csv.gz
    5. https://bitcointalk.org/index.php?topic=20.msg748#msg748
-   6. https://www.coindesk.com/price/
-   7. https://bitcoin.zorinaq.com/price
-   8. https://github.com/jsarenik/price.bublina.eu.org
-   9. https://github.com/jsarenik/price.bublina.eu.org/issues
-  10. https://github.com/jsarenik/price.bublina.eu.org/pulls
-  11. https://price.bublina.eu.org/linear.html
-  12. https://price.bublina.eu.org/hafuch.html
-  13. https://price.bublina.eu.org/hafuch-linear.html
-  14. https://price.bublina.eu.org/monthly.html
-  15. https://price.bublina.eu.org/yearly.html
-  16. https://price.bublina.eu.org/monthly-low.html
-  17. https://price.bublina.eu.org/yearly-low.html
+   6. https://www.coindesk.com/price/bitcoin
