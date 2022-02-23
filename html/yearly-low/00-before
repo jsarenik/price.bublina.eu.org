@@ -9,6 +9,14 @@
     <title>Yearly low bitcoin price chart</title>
 <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
     <style>
+body,
+input,
+button,
+select,
+textarea,
+.navbar-search .search-query {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 body {
     color: #000;
     background: #f0f0f0;
