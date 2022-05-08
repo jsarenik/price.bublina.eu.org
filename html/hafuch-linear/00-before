@@ -8,6 +8,7 @@
     <meta property="og:title" content="All-time 1k USD to bitcoin linear price chart" />
     <title>All-time 1k USD to bitcoin linear price chart</title>
 <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
+<link rel="stylesheet" href="assets/dygraph.css" integrity="sha384-nX04DcsRr+JqxR9kerwJ+CrlwncGlzRDrMHmMlpLJbroNGuqa9PuMqv7YGbWTlxY" />
     <style>
 body,
 input,
@@ -27,7 +28,7 @@ body {
     <div class="border-0">
     <div id="status"></div>
     <div id="graphdiv"></div>
-<script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-Siw62Hkn0S0jBTE5nHbjlPvg2soIqKgOnp4qUW49Pz5sOjEOue5d6NzCydyTsd2n"></script>
+<script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-cj5GuQPl7kpSo0tOxQOTtMpZVG/vvURpMtP2Msv1/2IV4dyrKwkdCBtk6+wF6HEz"></script>
     <script type="text/javascript">
 function formatter(y) {
     if (y < 1)

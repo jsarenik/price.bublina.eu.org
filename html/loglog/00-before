@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="onion-location" content="http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/yearly-low.html" />
+    <meta http-equiv="onion-location" content="http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/" />
     <meta name="twitter:card" content="summary" />
-    <meta property="og:title" content="Yearly low bitcoin price chart" />
-    <title>Yearly low bitcoin price chart</title>
+    <meta property="og:title" content="All-time Bitcoin loglog price chart" />
+    <meta property="og:image" content="https://bitcoin.zorinaq.com/price/snippet.png" />
+    <title>All-time Bitcoin loglog price chart</title>
 <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
 <link rel="stylesheet" href="assets/dygraph.css" integrity="sha384-nX04DcsRr+JqxR9kerwJ+CrlwncGlzRDrMHmMlpLJbroNGuqa9PuMqv7YGbWTlxY" />
     <style>
@@ -26,6 +27,14 @@ body {
 </head>
 <body>
     <div class="border-0">
+<center>
+      <input id='ylog' type="button" value="y log scale" onclick="setLogScale('y', true)">
+      <input id='ylinear' type="button" value="y linear scale" onclick="setLogScale('y', false)">
+      <input id='xlog' type="button" value="x log scale" onclick="setLogScale('x', true)">
+      <input id='xlinear' type="button" value="x linear scale" onclick="setLogScale('x', false)">
+      <div>Current scales: <span id="description"></span></div>
+    </center>
+
     <div id="status"></div>
     <div id="graphdiv"></div>
 <script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-cj5GuQPl7kpSo0tOxQOTtMpZVG/vvURpMtP2Msv1/2IV4dyrKwkdCBtk6+wF6HEz"></script>

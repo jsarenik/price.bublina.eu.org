@@ -1,0 +1,66 @@
+    // options
+    {
+	labels: ["Block", "Bitcoin price (USD)"],
+	height: "900",
+	legend: "always",
+	logscale: true,
+	labelsDiv: document.getElementById('status'),
+	color: "green",
+	fillGraph: true,
+	 axes: {
+	    y: {
+		axisLabelFormatter: formatter,
+		valueFormatter: formatter2,
+	    },
+	},
+    }
+  );
+      var graphs = [ g ];
+      var scales = { x : false, y : false };
+      function setLogScale(axis, val) {
+        if (axis === 'y') {
+          for (var idx = 0; idx < graphs.length; idx++) {
+            graphs[idx].updateOptions({ logscale: val });
+          }
+        } else {
+          for (var idx = 0; idx < graphs.length; idx++) {
+            graphs[idx].updateOptions({ axes : { x : {  logscale : val } } });
+          }
+        }
+        scales[axis] = val;
+        var text = "y: " + (scales.y ? "log" : "linear") + ", x: " + (scales.x ? "log" : "linear");
+        document.getElementById("description").innerText = text;
+      }
+
+      setLogScale('y', true);
+      setLogScale('x', true);
+gr = document.getElementById('graphdiv');
+if (screen.width > screen.height) {
+  gr.style.height = screen.height/1.2 + 'px';
+} else {
+  gr.style.height = screen.height/2 + 'px';
+}
+g.resize();
+</script>
+</div>
+<div class="container">
+
+<br>
+<p>
+This chart shows block numbers on the X axis and price in USD on the Y axis.
+Both are shown in logarithmic scale by default. Updated manually so far,
+because the block number (although it is a first-hand variable)
+is extrapolated from the day which records the price.
+The chart is interactive:
+</p>
+
+<ul>
+    <li>Zoom: click-drag</li>
+    <li>Pan: shift-click-drag</li>
+    <li>Restore zoom level: double-click</li>
+</ul>
+
+<p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
+    </div>
+</body>
+</html>
