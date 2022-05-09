@@ -47,10 +47,9 @@ g.resize();
 
 <br>
 <p>
-This chart shows block numbers on the X axis and price in USD on the Y axis.
-Both are shown in logarithmic scale by default. Updated manually so far,
-because the block number (although it is a first-hand variable)
-is extrapolated from the day which records the price.
+This chart shows all-time Bitcoin price history with block numbers on
+the X axis (instead of time) and price in USD on the Y axis.
+Both are shown in logarithmic scale by default. Updated daily.
 The chart is interactive:
 </p>
 
