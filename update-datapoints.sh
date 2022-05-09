@@ -19,5 +19,11 @@ do
   echo "[new Date(\"$date\"), $PRICE],"
 done | tee -a datapoints | grep . && echo ...datapoints update done. || EXIT=1
 
+echo "Updating datapoints-blocks..."
+N=$(sed -n "/$start/=" datapoints)
+sed -n "$N,\$p" datapoints | ./mkcsv-datapoints.sh \
+  | tee -a datapoints-blocks | grep . && echo ...datapoints-blocks updated. \
+  || EXIT=1
+
 rm $TMP
 test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
