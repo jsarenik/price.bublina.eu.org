@@ -47,9 +47,9 @@ g.resize();
 
 <br>
 <p>
-This chart shows all-time Bitcoin price history with
+This is a log-log plot showing all-time Bitcoin price history with
 <a href="https://developer.bitcoin.org/devguide/block_chain.html#block-height-and-forking">block height</a>
-on the X axis (showing
+on the X axis (the
 <a href="https://dergigi.com/2021/01/14/bitcoin-is-time/">Bitcoin time</a>
 instead of common time notation)
 and price in USD on the Y axis.
