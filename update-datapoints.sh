@@ -4,12 +4,12 @@ export TZ=UTC
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 cd $BINDIR
 last=$(tail -1 datapoints | grep -Eo '[0-9]+\-[0-9]{2}\-[0-9]{2}')
-start=$(date -d "$last + 1 day" +%Y-%m-%d)
 today=$(date +%Y-%m-%d)
 TMP=$(mktemp)
+lines=$(wc -l datapoints | cut -d" " -f1)
 
 wget -q -O - "https://api.coindesk.com/v1/bpi/historical/close.json\
-?start=$start&end=$today" > $TMP
+?start=$last&end=$today" > $TMP
 
 echo "Updating datapoints..."
 jq -r '.bpi | keys_unsorted[]' $TMP | while read date
@@ -17,12 +17,13 @@ do
   PRICE=$(jq ".bpi[\"$date\"]" $TMP)
   PRICE=$(printf "%.6f" $PRICE)
   echo "[new Date(\"$date\"), $PRICE],"
-done | tee -a datapoints | grep . && echo ...datapoints update done. || EXIT=1
+done | sed 1d \
+  | tee -a datapoints \
+  | grep . && echo ...datapoints update done. || EXIT=1
 
 rm $TMP
 test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
 
-N=$(sed -n "/$start/=" datapoints)
 echo "Updating datapoints-blocks..."
-sed -n "$N,\$p" datapoints | ./mkcsv-datapoints.sh \
+sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh \
   | tee -a datapoints-blocks | grep . && echo ...datapoints-blocks updated.
