@@ -4,26 +4,40 @@ export TZ=UTC
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 cd $BINDIR
 last=$(tail -1 datapoints | grep -Eo '[0-9]+\-[0-9]{2}\-[0-9]{2}')
+start=2022-01-01
 today=$(date +%Y-%m-%d)
 TMP=$(mktemp)
 lines=$(wc -l datapoints-blocks | cut -d" " -f1)
 
-wget -q -O - "https://api.coindesk.com/v1/bpi/historical/close.json\
-?start=$last&end=$today" > $TMP
+fresh() {
+cat > datapoints <<EOF
+[new Date("2009-01-03"), 0.000001],
+[new Date("2009-10-04"), 0.000001],
+EOF
+}
+
+wget -q -O - "https://production.api.coindesk.com/v2/price/values/BTC\
+?start_date=${start}T23:55&end_date=${today}T23:55&ohlc=false" > $TMP
 
 echo "Updating datapoints..."
-jq -r '.bpi | keys_unsorted[]' $TMP | while read date
+{ jq -r '.data.entries[]' $TMP \
+  | tr -d '\n' \
+  | tr '\[' '\n' \
+  | tr -d '[,\]]'; } | sed 1d | while read ts price
 do
-  PRICE=$(jq ".bpi[\"$date\"]" $TMP)
-  PRICE=$(printf "%.6f" $PRICE)
-  echo "[new Date(\"$date\"), $PRICE],"
+  date=$(date +%Y-%m-%d -d "@${ts%%000}")
+  echo "[new Date(\"${date}\"), $(echo $price | sed -E 's/^([0-9]+\.[0-9]{6}).*/\1/')],"
 done | sed 1d \
-  | tee -a datapoints \
-  | grep . && echo ...datapoints update done. || EXIT=1
+  | grep . > /tmp/datapoints-$$ && echo ...datapoints update done. || EXIT=1
+
+rm $TMP
+
+sed -n "/^\[new Date(\"$last.*/,\$p" /tmp/datapoints-$$ \
+  | sed 1d | tee -a datapoints
+rm /tmp/datapoints-$$
+
+test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
 
 echo "Updating datapoints-blocks..."
 sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh \
   | tee -a datapoints-blocks | grep . && echo ...datapoints-blocks updated.
-
-rm $TMP
-test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
