@@ -17,7 +17,7 @@ EOF
 }
 
 wget -q -O - "https://production.api.coindesk.com/v2/price/values/BTC\
-?start_date=${start}T23:55&end_date=${today}T23:55&ohlc=false" > $TMP
+?start_date=${start}T00:00&end_date=${today}T00:00&ohlc=false" > $TMP
 
 echo "Updating datapoints..."
 { jq -r '.data.entries[]' $TMP \
