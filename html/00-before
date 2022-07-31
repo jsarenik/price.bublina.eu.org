@@ -36,8 +36,10 @@ body {
 <script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-cj5GuQPl7kpSo0tOxQOTtMpZVG/vvURpMtP2Msv1/2IV4dyrKwkdCBtk6+wF6HEz"></script>
     <script type="text/javascript">
 function formatter(y) {
-    if (y < 1)
-	return '¢' + (y * 100).toFixed(2);
+    if (y < 0.01)
+	return '¢' + (y * 100).toFixed(3);
+    else if (y < 1)
+	return '¢' + (y * 100).toFixed(0);
     else if (y < 1000)
 	return '$' + y.toFixed(0);
     else
