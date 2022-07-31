@@ -41,7 +41,7 @@ function formatter(y) {
     else if (y < 1000)
 	return '$' + y.toFixed(2);
     else
-	return '$' + y.toFixed(0);
+	return '$' + y.toFixed(0)/1000 + "k";
 }
 function formatter2(y) {
     if (y < 1)
