@@ -39,7 +39,7 @@ function formatter(y) {
     if (y < 1)
 	return '¢' + (y * 100).toFixed(2);
     else if (y < 1000)
-	return '$' + y.toFixed(2);
+	return '$' + y.toFixed(0);
     else
 	return '$' + y.toFixed(0)/1000 + "k";
 }
