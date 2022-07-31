@@ -9,7 +9,8 @@ function formatter(y) {
 	return '$' + y.toFixed(0)/1000 + "k";
     else if (y < 1000 * 1000 * 1000)
 	return '$' + y.toFixed(0)/1000000 + "M";
-    else if (y < 1000 * 1000 * 1000 * 1000)
+    else
+	// if (y < 1000 * 1000 * 1000 * 1000)
 	return '$' + y.toFixed(0)/1000000000 + "G";
 }
 function formatter2(y) {
