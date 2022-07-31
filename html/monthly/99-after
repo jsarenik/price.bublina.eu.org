@@ -1,28 +1,3 @@
-    // options
-    {
-	labels: ["Date", "Bitcoin price (USD) each month"],
-	height: "600",
-	legend: "always",
-	logscale: true,
-	labelsDiv: document.getElementById('status'),
-	color: "green",
-	fillGraph: true,
-	yRangePad: 16,
-	axes: {
-	    y: {
-		axisLabelFormatter: formatter,
-		valueFormatter: formatter2,
-	    },
-	},
-    }
-  );
-gr = document.getElementById('graphdiv')
-if (screen.width > screen.height) {
-  gr.style.height = screen.height/1.2 + 'px';
-} else {
-  gr.style.height = screen.height/2 + 'px';
-}
-g.resize()
 </script>
 </div>
 <div class="container">
