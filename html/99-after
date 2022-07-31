@@ -63,8 +63,14 @@ however trading data for the first few weeks is—to my knowledge—not availabl
 </p>
 
 <p>
-After 2010-07-18 the Bitcoin exchange rate is from the
-<a href="https://www.coindesk.com/price/bitcoin">CoinDesk BPI</a>.
+After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
+((<a href="https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17">https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17</a>).
+</p>
+
+<p>
+After 2022-05-18 the exchange rate is from the <a href="https://www.coindesk.com/price/bitcoin/">CoinDesk BPI</a> v3 API
+(https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...)
+because v1 has gaps in the data starting on that date.
 </p>
 
 <hr>
