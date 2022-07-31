@@ -35,28 +35,3 @@ body {
     <div id="graphdiv"></div>
 <script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-cj5GuQPl7kpSo0tOxQOTtMpZVG/vvURpMtP2Msv1/2IV4dyrKwkdCBtk6+wF6HEz"></script>
     <script type="text/javascript">
-function formatter(y) {
-    if (y < 0.01)
-	return '¢' + (y * 100).toFixed(3);
-    else if (y < 1)
-	return '¢' + (y * 100).toFixed(0);
-    else if (y < 1000)
-	return '$' + y.toFixed(0);
-    else if (y < 10000000)
-	return '$' + y.toFixed(0)/1000 + "k";
-    else if (y < 100000000000)
-	return '$' + y.toFixed(0)/1000000 + "M";
-    else if (y < 1000000000000000)
-	return '$' + y.toFixed(0)/1000000000 + "G";
-}
-function formatter2(y) {
-    if (y < 1)
-	return '$' + y.toFixed(5);
-    else
-	return '$' + y.toFixed(2);
-}
-
-  g = new Dygraph(
-    // containing div
-    document.getElementById("graphdiv"),
-    // data
