@@ -64,7 +64,7 @@ however trading data for the first few weeks is—to my knowledge—not availabl
 
 <p>
 After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
-((<a href="https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17">https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17</a>).
+(<a href="https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17">https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17</a>).
 </p>
 
 <p>
