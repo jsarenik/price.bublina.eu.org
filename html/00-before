@@ -42,8 +42,12 @@ function formatter(y) {
 	return '¢' + (y * 100).toFixed(0);
     else if (y < 1000)
 	return '$' + y.toFixed(0);
-    else
+    else if (y < 10000000)
 	return '$' + y.toFixed(0)/1000 + "k";
+    else if (y < 100000000000)
+	return '$' + y.toFixed(0)/1000000 + "M";
+    else if (y < 1000000000000000)
+	return '$' + y.toFixed(0)/1000000000 + "G";
 }
 function formatter2(y) {
     if (y < 1)
