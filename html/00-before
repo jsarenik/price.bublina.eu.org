@@ -23,6 +23,10 @@ body {
     color: #000;
     background: #f0f0f0;
 }
+.word-wrap {
+    word-wrap: break-word;
+    word-break: break-all;
+}
 </style>
 </head>
 <body>
