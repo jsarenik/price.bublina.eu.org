@@ -50,13 +50,14 @@ because v1 has gaps in the data starting on that date.
 
 <hr>
 
-<p>All above
-comes originally from (and is still up-to-date at)
+<p>
+All above comes originally from (and is still up-to-date at)
 <span class="word-wrap"><a href="https://bitcoin.zorinaq.com/price"
 >bitcoin.zorinaq.com/price</a></span>. Thank you, Marc!
 </p>
 
-<p>The notable change compared to the original is that two ancient
+<p>
+The notable change compared to the original is that two ancient
 datapoints were added and they show that the genesis block was mined
 on 2009-01-03 and until 2009-10-04 (the day before the first
 real price is recorded on this chart) the price was zero. This change
@@ -64,13 +65,14 @@ also nicely offsets the Y-axis values of the logarithmic chart
 making it much more human-readable.
 </p>
 
-<p>All the sources and the data used to generate this site are kept in
+<p>
+All the sources and the data used to generate this site are kept in
 <a href="https://github.com/jsarenik/price.bublina.eu.org">a&nbsp;git
-repository on Github</a>.</p>
+repository on Github</a>.
+</p>
 
 <h2>Variants</h2>
 <p>See also following variants:</p>
-<p>
 <ul>
 <li><a href="linear.html">linear</a></li>
 <li><a href="hafuch.html">hafuch</a> (and <a href="hafuch-linear.html">hafuch-linear</a>)</li>
@@ -78,14 +80,11 @@ repository on Github</a>.</p>
 <li><a href="yearly.html">yearly</a> (<a href="yearly-low.html">low</a>)</li>
 <li><a href="loglog.html">log-log plot</a> - logscale also on X axis with block numbers instead of date-time
 </ul>
-</p>
 <h2>Links</h2>
-<p>
 <ul>
 <li><a href="https://be.anyone.eu.org">Bitcoin Explorer</a></li>
 <li><a href="https://storeoftime.com">Store of Time</a></li>
 </ul>
-</p>
     </div>
 </body>
 </html>
