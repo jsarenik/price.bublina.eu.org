@@ -1,5 +1,5 @@
 # [price.bublina.eu.org](https://price.bublina.eu.org)
-The most comprehensive all-time Bitcoin price history chart.
+Clone of the most comprehensive all-time Bitcoin price history chart.
 
 Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 
