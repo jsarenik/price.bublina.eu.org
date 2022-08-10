@@ -39,12 +39,12 @@ however trading data for the first few weeks is—to my knowledge—not availabl
 
 <p>
 After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
-(<span style="font-size: xx-small;" class="word-wrap""><a href="https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17">https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17</a></span>).
+(<span style="font-size: xx-small;" class="word-wrap"><a href="https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17">https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17</a></span>).
 </p>
 
 <p>
 After 2022-05-18 the exchange rate is from the <a href="https://www.coindesk.com/price/bitcoin/">CoinDesk BPI</a> v3 API
-(<span style="font-size: xx-small;" class="word-wrap"">https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...</span>)
+(<span style="font-size: xx-small;" class="word-wrap">https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...</span>)
 because v1 has gaps in the data starting on that date.
 </p>
 
@@ -52,8 +52,8 @@ because v1 has gaps in the data starting on that date.
 
 <p>All above
 comes originally from (and is still up-to-date at)
-<a href="https://bitcoin.zorinaq.com/price"
->bitcoin.zorinaq.com/price</a>. Thank you, Marc!
+<span class="word-wrap"><a href="https://bitcoin.zorinaq.com/price"
+>bitcoin.zorinaq.com/price</a></span>. Thank you, Marc!
 </p>
 
 <p>The notable change compared to the original is that two ancient
