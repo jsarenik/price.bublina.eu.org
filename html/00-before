@@ -32,5 +32,5 @@ body {
     <div class="border-0">
     <div id="status"></div>
     <div id="graphdiv"></div>
-<script type="text/javascript" src="assets/dygraph.min.js" integrity="sha384-cj5GuQPl7kpSo0tOxQOTtMpZVG/vvURpMtP2Msv1/2IV4dyrKwkdCBtk6+wF6HEz"></script>
-    <script type="text/javascript">
+<script src="assets/dygraph.min.js" integrity="sha384-cj5GuQPl7kpSo0tOxQOTtMpZVG/vvURpMtP2Msv1/2IV4dyrKwkdCBtk6+wF6HEz"></script>
+    <script>
