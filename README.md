@@ -1,10 +1,11 @@
 # [price.bublina.eu.org](https://price.bublina.eu.org)
 The most comprehensive all-time Bitcoin price history chart.
 
-Originally from https://bitcoin.zorinaq.com/price/
+Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 
 Accessible via [Tor](https://torproject.org) from
-http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/
+[http://yjea…3qd.onion/](
+http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/).
 
 ## Requirements
 
