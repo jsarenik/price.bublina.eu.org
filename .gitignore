@@ -1,5 +1,6 @@
 public/*.html
 public/*.csv
+public/_headers
 datapoints.csv
 datapoints-inline.csv
 datapoints-monthly

@@ -18,6 +18,7 @@ date
 cp public/yearly-low.html public/low.html
 ./gen-variant.sh monthly-low
 ./gen-linear.sh
+./update-headers.sh > public/_headers
 
 echo "$NETLIFY_URL" | grep -q ^https && {
    curl --silent -X POST -d {} $NETLIFY_URL && echo Netlify triggered
