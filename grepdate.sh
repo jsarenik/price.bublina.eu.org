@@ -12,4 +12,5 @@ getit() {
     | jq ".[] | (select(.time <= $SECS)) | .height" | head -1
 }
 
-getit $SECS | grep .
+BLOCK=$(getit "$SECS")
+echo "$BLOCK" | grep .

@@ -6,6 +6,6 @@ cd "$BINDIR" || exit
 tr -d '[,a-zA-Z"\[()\]' | cut -d, -f1-2 | cut -b2- \
   | while read date price
 do
-  DATE=$(./grepdate.sh $date | grep .)
-  printf "%s, %s\n" ${DATE:-1} $price
+  BLOCK=$(./grepdate.sh "$date") \
+    && printf "%s, %s\n" "${BLOCK:-900000}" "$price"
 done
