@@ -20,6 +20,8 @@ cp public/yearly-low.html public/low.html
 ./gen-linear.sh
 ./update-headers.sh > public/_headers
 
-echo "$NETLIFY_URL" | grep -q ^https && {
-   curl --silent -X POST -d {} $NETLIFY_URL && echo Netlify triggered
-} || echo "Netlify deployment not run"
+test "$RUN_BROTLI" = "1" && {
+  echo Running brotli
+  which brotli
+  brotli public/*html
+} || echo "Brotli not run"
