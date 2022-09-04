@@ -2,7 +2,7 @@
 
 genone() {
   cat <<EOF
-/$1
+/${1%.html}
   Onion-Location: http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/$1
 
 EOF
@@ -14,5 +14,5 @@ genone
 cd public
 for f in *.html
 do
-  genone "${f%.html}"
+  genone "$f"
 done
