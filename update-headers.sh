@@ -14,5 +14,5 @@ genone
 cd public
 for f in *.html
 do
-  genone $f
+  genone "${f%.html}"
 done
