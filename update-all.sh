@@ -23,5 +23,5 @@ cp public/yearly-low.html public/low.html
 test "$RUN_BROTLI" = "1" && {
   echo Running brotli
   which brotli
-  brotli public/*html
+  ./brotli-it.sh public
 } || echo "Brotli not run"
