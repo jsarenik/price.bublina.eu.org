@@ -4,7 +4,7 @@ Clone of the most comprehensive all-time Bitcoin price history chart.
 Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 
 Accessible via:
- * [[300:5ecb:…:bd45]](http://[300:5ecb:6b8a:d837::bd45]) on
+ * [[300:5ecb:…:bd45]](http://300:5ecb:6b8a:d837::bd45) on
    [Yggdrasil Network](https://yggdrasil-network.github.io)
  * [http://yjea…3qd.onion/](
 http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion)
