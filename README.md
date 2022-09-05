@@ -3,11 +3,19 @@ Clone of the most comprehensive all-time Bitcoin price history chart.
 
 Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 
-Accessible via [Tor](https://torproject.org) from
-[http://yjea…3qd.onion/](
-http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/)
-and via plain old HTTP/1.1 from
-[http.price.bublina.eu.org](http://http.price.bublina.eu.org/).
+Accessible via:
+ * http://[300:5ecb:6b8a:d837::bd45] on
+   [Yggdrasil Network](https://yggdrasil-network.github.io)
+ * [http://yjea…3qd.onion/](
+http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion)
+   on [Tor](https://torproject.org)
+ * [http.price.bublina.eu.org](http://http.price.bublina.eu.org).
+   on clearnet (good old internet) using plain old HTTP/1.1
+ * [price.bublina.eu.org](https://price.bublina.eu.org)
+   on clearnet using protocols HTTP/3, HTTP/2 or even legacy
+   HTTP/1.1 but only with TLS,, hosted for free by
+   [CloudFlare Pages](https://pages.cloudflare.com/)
+   (previously [Netlify](https://www.netlify.com/)).
 
 ## Requirements
 
