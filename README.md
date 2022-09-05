@@ -13,7 +13,7 @@ http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion)
    on clearnet (good old internet) using plain old HTTP/1.1
  * [price.bublina.eu.org](https://price.bublina.eu.org)
    on clearnet using protocols HTTP/3, HTTP/2 or even legacy
-   HTTP/1.1 but only with TLS,, hosted for free by
+   HTTP/1.1 but only with TLS encryption, hosted for free by
    [CloudFlare Pages](https://pages.cloudflare.com/)
    (previously [Netlify](https://www.netlify.com/)).
 
