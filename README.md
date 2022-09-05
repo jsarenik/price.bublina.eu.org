@@ -5,7 +5,9 @@ Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 
 Accessible via [Tor](https://torproject.org) from
 [http://yjea…3qd.onion/](
-http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/).
+http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/)
+and via plain old HTTP/1.1 from
+[http.price.bublina.eu.org](http://http.price.bublina.eu.org/).
 
 ## Requirements
 
