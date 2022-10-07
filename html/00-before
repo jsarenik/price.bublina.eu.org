@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="twitter:card" content="summary" />
-    <meta property="og:title" content="All-time Bitcoin price chart" />
-    <meta property="og:image" content="https://price.bublina.eu.org/snippet.png" />
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="All-time Bitcoin price chart">
+    <meta property="og:image" content="https://price.bublina.eu.org/snippet.png">
     <title>All-time Bitcoin price chart</title>
-<link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" />
-<link rel="stylesheet" href="assets/dygraph.css" integrity="sha384-nX04DcsRr+JqxR9kerwJ+CrlwncGlzRDrMHmMlpLJbroNGuqa9PuMqv7YGbWTlxY" />
+<link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2">
+<link rel="stylesheet" href="assets/dygraph.css" integrity="sha384-nX04DcsRr+JqxR9kerwJ+CrlwncGlzRDrMHmMlpLJbroNGuqa9PuMqv7YGbWTlxY">
     <style>
 body,
 input,
