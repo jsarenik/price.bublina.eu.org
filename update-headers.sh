@@ -3,7 +3,7 @@
 genone() {
   cat <<EOF
 /${1%.html}
-  Onion-Location: http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion/$1
+  Onion-Location: http://http.price.bublina.eu.org/$1
 
 EOF
 }
