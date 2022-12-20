@@ -6,8 +6,8 @@ Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 Accessible via:
  * `http://[300:5ecb:6b8a:d837::bd45]/` on
    [Yggdrasil Network](https://yggdrasil-network.github.io)
- * [http://yjea…3qd.onion/](
-http://yjeajli4dzdwm2lu32rkruj5safydu2utx22trkdszwulegookfvj3qd.onion)
+ * [http://76fzz…cqd.onion/](
+http://76fzz7gro2z6so3uadhyaxtijhdna3uuxyr3tsa7at33jvk343kq7cqd.onion)
    on [Tor](https://torproject.org)
  * [http.price.bublina.eu.org](http://http.price.bublina.eu.org).
    on clearnet (good old internet) using plain old HTTP/1.1
