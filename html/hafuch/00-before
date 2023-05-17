@@ -6,8 +6,8 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:title" content="All-time 1k USD to bitcoin price chart">
     <title>All-time 1k USD to bitcoin price chart</title>
-<link rel="stylesheet" href="assets/bootstrap-5.3.0-alpha3.min.css" integrity="sha384-F1pWAPZsxS5jH/Gm+ZMoG9jVcLibTYl7XHRngrNVOG6ZF2FyMKwfsCORJGbM+w34">
-<link rel="stylesheet" href="assets/dygraph-2.2.1.min.css" integrity="sha384-yTpqWYr3BBJxGBFY0GfboxCTilKr3lSetdkFbjpaWUuwggmvSXjBV1iQ+ZAuseC7">
+<link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2">
+<link rel="stylesheet" href="assets/dygraph.css" integrity="sha384-nX04DcsRr+JqxR9kerwJ+CrlwncGlzRDrMHmMlpLJbroNGuqa9PuMqv7YGbWTlxY">
     <style>
 body,
 input,
@@ -27,5 +27,5 @@ body {
     <div class="border-0">
     <div id="status"></div>
     <div id="graphdiv"></div>
-<script src="assets/dygraph-2.2.1.min.js" integrity="sha384-ZV2Kzd1KN1dSeiNwUGlwcaBubxMj9OJhckxcNOKRQdL0eWadpFtxCZaDbJVLofDZ"></script>
+<script src="assets/dygraph-2.2.1.min.js" integrity="sha384-Siw62Hkn0S0jBTE5nHbjlPvg2soIqKgOnp4qUW49Pz5sOjEOue5d6NzCydyTsd2n"></script>
     <script>
