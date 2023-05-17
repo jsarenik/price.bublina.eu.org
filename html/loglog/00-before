@@ -27,10 +27,12 @@ body {
 <body>
     <div class="border-0">
 <center>
+  <form id="scales">
       <input id='ylog' type="button" value="y log scale" onclick="setLogScale('y', true)">
       <input id='ylinear' type="button" value="y linear scale" onclick="setLogScale('y', false)"><br>
       <input id='xlog' type="button" value="x log scale" onclick="setLogScale('x', true)">
       <input id='xlinear' type="button" value="x linear scale" onclick="setLogScale('x', false)">
+  </form>
       <div>Current scales: <span id="description"></span></div>
     </center>
 
