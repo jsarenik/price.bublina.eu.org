@@ -46,7 +46,7 @@ sed -n "/^\[new Date(\"$last.*/,\$p" /tmp/datapoints-$$ \
   | sed 1d | tee -a datapoints
 rm /tmp/datapoints-$$
 
-#test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
+test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
 
 echo "Updating datapoints-blocks..."
 sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh \
