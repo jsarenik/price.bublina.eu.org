@@ -6,9 +6,6 @@ Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 Accessible via:
  * `http://[300:5ecb:6b8a:d837::bd45]/` on
    [Yggdrasil Network](https://yggdrasil-network.github.io)
- * [http://76fzz…cqd.onion/](
-http://76fzz7gro2z6so3uadhyaxtijhdna3uuxyr3tsa7at33jvk343kq7cqd.onion)
-   on [Tor](https://torproject.org)
  * [http.price.bublina.eu.org](http://http.price.bublina.eu.org).
    on clearnet (good old internet) using plain old HTTP/1.1
  * [price.bublina.eu.org](https://price.bublina.eu.org)
@@ -22,6 +19,8 @@ http://76fzz7gro2z6so3uadhyaxtijhdna3uuxyr3tsa7at33jvk343kq7cqd.onion)
  * [jq](https://stedolan.github.io/jq/)
  * `coreutils` and `bash` will do,
    but [`busybox`](https://busybox.net/) is enough
+ * `busybox wget` is now required since GNU Wget or even cURL
+   fail to get the API endpoint from Coindesk.
 
 ## How it works
 
