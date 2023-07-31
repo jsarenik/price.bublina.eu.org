@@ -29,8 +29,7 @@ EOF
 } | tr -d "\n" | jq -sRr @uri)
 end="&_website=coindesk"
 
-wget -q -O - "${URL}?query=${query}${end}" > $TMP
-#curl -s "${URL}?query=${query}${end}" > $TMP
+busybox wget -q -O - "${URL}?query=${query}${end}" > $TMP
 
 echo "Updating datapoints..."
 { jq -r '.entries[] | (.[0] | tostring) + " " + (.[1] | tostring)' $TMP; } \
