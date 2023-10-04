@@ -19,6 +19,7 @@ cp public/yearly-low.html public/low.html
 ./gen-variant.sh monthly-low
 ./gen-linear.sh
 ./update-headers.sh > public/_headers
+./contrib/datacompare.sh > public/datacompare.txt
 
 test "$RUN_BROTLI" = "1" && {
   echo Running brotli
