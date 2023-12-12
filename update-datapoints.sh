@@ -20,10 +20,10 @@ URL="https://www.coindesk.com/pf/api/v3/content/fetch/chart-api"
 query=$({
 cat <<EOF
 {\
-"end_date":"${today}T12:00",\
+"end_date":"${today}T00:00",\
 "iso":"BTC",\
 "ohlc":false,\
-"start_date":"${start}T12:00"\
+"start_date":"${start}T00:00"\
 }
 EOF
 } | tr -d "\n" | jq -sRr @uri)
