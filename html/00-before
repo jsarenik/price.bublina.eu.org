@@ -26,7 +26,13 @@ body {
     word-wrap: break-word;
     word-break: break-all;
 }
-</style>
+hr {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    /* color: #333; */ /* old IE */
+    /* background-color: #333; */ /* Modern Browsers */
+}</style>
 </head>
 <body>
     <div class="border-0">
