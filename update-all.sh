@@ -7,7 +7,8 @@
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
 cd "$BINDIR" || exit
 date
-./update-datapoints.sh
+#./update-datapoints.sh
+./contrib/dataget.sh > datapoints
 ./gen-inline.sh
 ./gen-inline-loglog.sh
 ./gen-hafuch.sh
