@@ -27,11 +27,11 @@ body {
     word-break: break-all;
 }
 hr {
-    border: none;
-    height: 5px;
+    border: 2px;
+    height: 10px;
     /* Set the hr color */
-    /* color: #333; */ /* old IE */
-    /* background-color: #333; */ /* Modern Browsers */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }</style>
 </head>
 <body>
