@@ -9,6 +9,7 @@ cd "$BINDIR" || exit
 date
 #./update-datapoints.sh
 ./contrib/dataget.sh > datapoints
+./update-blockdata.sh
 ./gen-inline.sh
 ./gen-inline-loglog.sh
 ./gen-hafuch.sh
