@@ -49,8 +49,12 @@ rm /tmp/datapoints-$$
 test "$EXIT" = "1" && { echo No new data found. Exiting.; exit 1; }
 
 echo "Updating datapoints-blocks..."
-sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh \
-  | tee -a datapoints-blocks | grep . && echo ...datapoints-blocks updated.
+dpf=/dev/shm/dpb-tmp
+cp datapoints-blocks $dpf
+sed -i '$d' $dpf
+sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh | sed '$d' \
+  | tee -a $dpf | grep . && echo ...datapoints-blocks updated.
+cp $dpf datapoints-blocks
 
 # Check if there are more than one lines in datapoints-blocks
 # starting with "^1,"

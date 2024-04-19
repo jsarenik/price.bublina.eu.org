@@ -6,7 +6,7 @@ cd $BINDIR
 lines=$(wc -l datapoints-blocks | cut -d" " -f1)
 
 echo "Updating datapoints-blocks..."
-sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh \
+sed -n "$lines,\$p" datapoints | sed 1d | ./mkcsv-datapoints.sh | sed '$d' \
   | tee -a datapoints-blocks | grep . && echo ...datapoints-blocks updated.
 
 # Check if there are more than one lines in datapoints-blocks
