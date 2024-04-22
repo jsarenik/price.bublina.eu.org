@@ -8,7 +8,7 @@ a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
 cd "$BINDIR" || exit
 date
 #./update-datapoints.sh
-./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
+./contrib/dataget.sh > datapoints
 ./update-blockdata.sh
 ./gen-inline.sh
 ./gen-inline-loglog.sh
