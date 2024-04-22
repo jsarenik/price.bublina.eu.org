@@ -25,7 +25,9 @@ body {
 </style>
 </head>
 <body>
-    <div class="border-0">
+    <div class="container">
+    <div class="row">
+    <div class="col">
 <center>
   <form id="scales">
       <input id='ylog' type="button" value="y log scale" onclick="setLogScale('y', true)">
