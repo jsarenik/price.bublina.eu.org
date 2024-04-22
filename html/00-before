@@ -35,7 +35,9 @@ hr {
 }</style>
 </head>
 <body>
-    <div class="border-0">
+    <div class="container">
+    <div class="row">
+    <div class="col">
     <div id="status"></div>
     <div id="graphdiv"></div>
 <script src="assets/dygraph-2.2.1.min.js" integrity="sha384-Siw62Hkn0S0jBTE5nHbjlPvg2soIqKgOnp4qUW49Pz5sOjEOue5d6NzCydyTsd2n"></script>
