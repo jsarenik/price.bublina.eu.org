@@ -1,8 +1,7 @@
 
 </script>
 </div>
-<div class="container">
-
+<div class="content">
 <br>
 <p>
 This reverse-chart uses as its source the daily data of Bitcoin price
@@ -20,5 +19,6 @@ The chart is interactive:
 
 <p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
     </div>
+</section>
 </body>
 </html>
