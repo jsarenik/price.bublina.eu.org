@@ -6,8 +6,8 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:title" content="All-time 1k USD to bitcoin linear price chart">
     <title>All-time 1k USD to bitcoin linear price chart</title>
-<link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2">
-<link rel="stylesheet" href="assets/dygraph.css" integrity="sha384-nX04DcsRr+JqxR9kerwJ+CrlwncGlzRDrMHmMlpLJbroNGuqa9PuMqv7YGbWTlxY">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+<link rel="stylesheet" href="assets/dygraph-nocolor.css" integrity="sha384-zXSUVreSYSlBnnTvDvp1h5HhYbXSAuWgyueutzPwk6xJKWyFOYn6rB0ePoucf2/x">
     <style>
 body,
 input,
@@ -17,14 +17,11 @@ textarea,
 .navbar-search .search-query {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-body {
-    color: #000;
-    background: #f0f0f0;
-}
 </style>
 </head>
 <body>
-    <div class="border-0">
+<section class="section">
+    <div class="container">
     <div id="status"></div>
     <div id="graphdiv"></div>
 <script src="assets/dygraph-2.2.1.min.js" integrity="sha384-Siw62Hkn0S0jBTE5nHbjlPvg2soIqKgOnp4qUW49Pz5sOjEOue5d6NzCydyTsd2n"></script>
