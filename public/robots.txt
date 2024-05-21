@@ -1,0 +1,8 @@
+# start of file
+user-agent: *
+disallow: /downloads/
+
+user-agent: magicsearchbot
+disallow: /uploads/
+
+#sitemap: https://pricey.pages.dev/sitemap-file.xml
