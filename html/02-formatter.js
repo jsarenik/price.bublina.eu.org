@@ -1,6 +1,10 @@
 function formatter(y) {
-    if (y < 0.01)
+    if ((y*10000+0.1) < 1)
 	return '¢' + (y * 100).toFixed(3);
+    else if (y*1000 < 1)
+	return '¢' + (y * 100).toFixed(2);
+    else if (y*100 < 1)
+	return '¢' + (y * 100).toFixed(1);
     else if (y < 1)
 	return '¢' + (y * 100).toFixed(0);
     else if (y < 1000)
