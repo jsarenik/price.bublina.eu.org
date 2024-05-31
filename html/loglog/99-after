@@ -53,6 +53,13 @@ The chart is interactive:
       }
       setLogScale('y', true);
       setLogScale('x', true);
+gr = document.getElementById('graphdiv');
+if (screen.width > screen.height) {
+  gr.style.height = screen.height/1.6 + 'px';
+} else {
+  gr.style.height = screen.height/2 + 'px';
+}
+g.resize();
 </script>
 </body>
 </html>
