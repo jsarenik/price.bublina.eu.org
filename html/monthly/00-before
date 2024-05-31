@@ -20,7 +20,6 @@ textarea,
 </style>
 </head>
 <body>
-<section class="section">
     <div class="container">
     <div id="status"></div>
     <div id="graphdiv"></div>

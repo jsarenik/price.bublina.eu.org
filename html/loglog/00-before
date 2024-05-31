@@ -21,7 +21,6 @@ textarea,
 </style>
 </head>
 <body>
-<section class="section">
     <div class="container">
 <center>
   <form id="scales">
