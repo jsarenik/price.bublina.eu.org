@@ -34,5 +34,25 @@ The chart is interactive:
 <p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
     </div>
 </section>
+<script>
+      var graphs = [ g ];
+      var scales = { x : false, y : false };
+      function setLogScale(axis, val) {
+        if (axis === 'y') {
+          for (var idx = 0; idx < graphs.length; idx++) {
+            graphs[idx].updateOptions({ logscale: val });
+          }
+        } else {
+          for (var idx = 0; idx < graphs.length; idx++) {
+            graphs[idx].updateOptions({ axes : { x : {  logscale : val } } });
+          }
+        }
+        scales[axis] = val;
+        var text = "y: " + (scales.y ? "log" : "linear") + ", x: " + (scales.x ? "log" : "linear");
+        document.getElementById("description").innerText = text;
+      }
+      setLogScale('y', true);
+      setLogScale('x', true);
+</script>
 </body>
 </html>
