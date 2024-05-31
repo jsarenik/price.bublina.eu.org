@@ -1,7 +1,7 @@
 </script>
 </div>
+<section class="section">
 <div class="content">
-<br>
 <p>
 This is the most <strong>comprehensive</strong> all-time Bitcoin price history
 chart you will find online. Updated daily.
@@ -90,5 +90,6 @@ repository on Github</a>.
 <li><a href="https://www.linkedin.com/pulse/id-known-what-we-were-starting-ray-dillinger/">If I'd Known What We Were Starting</a></li>
 </ul>
     </div>
+</section>
 </body>
 </html>

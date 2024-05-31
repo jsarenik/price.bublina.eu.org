@@ -1,8 +1,8 @@
 
 </script>
 </div>
+<section class="section">
 <div class="content">
-<br>
 <p>
 This is a log-log plot showing all-time Bitcoin price history with
 <a href="https://developer.bitcoin.org/devguide/block_chain.html#block-height-and-forking">block height</a>
@@ -24,5 +24,6 @@ The chart is interactive:
 
 <p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
     </div>
+</section>
 </body>
 </html>

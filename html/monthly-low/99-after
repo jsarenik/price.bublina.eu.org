@@ -1,7 +1,7 @@
 </script>
 </div>
+<section class="section">
 <div class="content">
-<br>
 <p>
 <strong>What was the lowest price of Bitcoin each month?</strong>
 The chart is interactive:
@@ -17,5 +17,6 @@ The chart is interactive:
 
 <p>Go back to <a href="/">All-time Bitcoin price chart</a>.</p>
     </div>
+</section>
 </body>
 </html>
