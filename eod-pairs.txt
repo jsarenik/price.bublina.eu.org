@@ -1,5 +1,9 @@
 cdi_ti BTI-USD
+cdi_ti ETI-USD
+cdisr CESR-ETH
 cdiamina BTIAMINA-USD
 cdifr BFIC-USD
 cdifti BTIUSF-USD
 cditis BTIS1-USD
+cditis ETIS1-USD
+cditr ETXTR-USD
