@@ -9,7 +9,7 @@ cd "$BINDIR" || exit
 date
 #./update-datapoints.sh
 ./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
-./contrib/lynxcompare.sh > public/lynxcompare.txt
+./contrib/wgetcompare.sh > public/wgetcompare.txt
 ./update-blockdata.sh
 ./gen-inline.sh
 ./gen-inline-loglog.sh

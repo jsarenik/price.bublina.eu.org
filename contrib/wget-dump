@@ -1,0 +1,33 @@
+chart you will find online. Updated daily.
+The chart is interactive:
+
+    Zoom: click-drag
+    Pan: shift-click-drag
+    Restore zoom level: double-click
+
+On 2009-10-05 the market price of Bitcoin is first established at $0.000764/BTC
+by New Liberty Standard, the first Bitcoin exchange ($1.00 buys 1309.03 BTC.)
+The exchange rate history is available at two archived pages:
+first,
+second.
+Their last known exchange rate is $0.005472/BTC on 2010-03-02.
+
+On 2010-04-25 the market price is established again at $0.003/BTC, using the daily
+volume-weighted trading price of the second Bitcoin exchange,
+<a href="https://en.bitcoin.it/wiki/Bitcoin_Market"
+    >BitcoinMarket.com
+(<a href="https://api.bitcoincharts.com/v1/csv/bcmPPUSD.csv.gz"
+    >PayPal USD trades).
+The owner, dwdollar, actually started operating it on
+<a href="https://bitcointalk.org/index.php?topic=20.msg748#msg748"
+    >2010-03-17,
+however trading data for the first few weeks is—to my knowledge—not available.
+
+After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
+(https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17).
+
+After 2022-05-18 the BPI v1 API has gaps, so the exchange rate is from the CoinDesk Bitcoin XBX index (currently https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&amp;...).
+For a while I was pulling data from the "BPI v3 API" (https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...) but it was disabled on 2024-11-24 so I switched to the Bitcoin XBX index URL.
+
+    
+
