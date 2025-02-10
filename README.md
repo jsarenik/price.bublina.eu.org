@@ -4,8 +4,6 @@ Clone of the most comprehensive all-time Bitcoin price history chart.
 Derived from [Zorinaq's price chart](https://bitcoin.zorinaq.com/price/).
 
 Accessible via:
- * [http.price.bublina.eu.org](http://http.price.bublina.eu.org).
-   on clearnet (good old internet) using plain old HTTP/1.1
  * [price.bublina.eu.org](https://price.bublina.eu.org)
    and [pricey.pages.dev](https://pricey.pages.dev)
    on clearnet using protocols HTTP/3, HTTP/2 or even legacy
