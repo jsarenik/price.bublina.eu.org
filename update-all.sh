@@ -9,7 +9,6 @@ cd "$BINDIR" || exit
 date
 #./update-datapoints.sh
 ./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
-./contrib/wgetcompare.sh > public/wgetcompare.txt
 ./update-blockdata.sh
 ./gen-inline.sh
 ./gen-inline-loglog.sh
@@ -23,6 +22,7 @@ cp public/yearly-low.html public/low.html
 ./gen-linear.sh
 #./update-headers.sh > public/_headers
 ./contrib/datacompare.sh > public/datacompare.txt
+./contrib/wgetcompare.sh > public/wgetcompare.txt
 
 test "$RUN_BROTLI" = "1" && {
   echo Running brotli
