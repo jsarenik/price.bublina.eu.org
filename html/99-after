@@ -42,8 +42,8 @@ After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
 </p>
 
 <p>
-After 2022-05-18 the BPI v1 API has gaps, so the exchange rate is from the <a href="https://indices.coindesk.com/indices">CoinDesk Bitcoin XBX index</a> (currently https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&amp;...).
-For a while I was pulling data from the "BPI v3 API" (https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...) but it was disabled on 2024-11-24 so I switched to the Bitcoin XBX index URL.
+After 2022-05-18 the BPI v1 API has gaps, so the exchange rate is from the <a href="https://indices.coindesk.com/indices">CoinDesk Bitcoin XBX index</a> (currently <span style="font-size: xx-small;" class="word-wrap">https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&amp;...</span>).
+For a while I was pulling data from the "BPI v3 API" (<span style="font-size: xx-small;" class="word-wrap">https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...</span>) but it was disabled on 2024-11-24 so I switched to the Bitcoin XBX index URL.
 </p>
 
 <hr>
