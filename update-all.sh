@@ -7,7 +7,8 @@
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
 cd "$BINDIR" || exit
 date
-#./update-datapoints.sh
+./days.sh > public/days.json
+./update-datapoints.sh
 #./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
 ./update-blockdata.sh
 ./gen-inline.sh
@@ -23,7 +24,6 @@ cp public/yearly-low.html public/low.html
 #./update-headers.sh > public/_headers
 ./contrib/datacompare.sh > public/datacompare.txt
 ./contrib/wgetcompare.sh > public/wgetcompare.txt
-./days.sh > public/days.json
 
 test "$RUN_BROTLI" = "1" && {
   echo Running brotli
