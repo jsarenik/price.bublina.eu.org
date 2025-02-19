@@ -23,6 +23,7 @@ cp public/yearly-low.html public/low.html
 #./update-headers.sh > public/_headers
 ./contrib/datacompare.sh > public/datacompare.txt
 ./contrib/wgetcompare.sh > public/wgetcompare.txt
+./days.sh > public/days.json
 
 test "$RUN_BROTLI" = "1" && {
   echo Running brotli

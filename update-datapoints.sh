@@ -4,7 +4,6 @@ export TZ=UTC
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd $a; pwd)
 cd $BINDIR
 last=$(tail -1 datapoints | grep -Eo '[0-9]+\-[0-9]{2}\-[0-9]{2}')
-start=2022-05-17
 today=$(date +%Y-%m-%d)
 TMP=$(mktemp)
 lines=$(wc -l datapoints-blocks | cut -d" " -f1)
@@ -16,28 +15,14 @@ cat > datapoints <<EOF
 EOF
 }
 
-URL="https://www.coindesk.com/pf/api/v3/content/fetch/chart-api"
-query=$({
-cat <<EOF
-{\
-"end_date":"${today}T00:00",\
-"iso":"BTC",\
-"ohlc":false,\
-"start_date":"${start}T00:00"\
-}
-EOF
-} | tr -d "\n" | jq -sRr @uri)
-end="&_website=coindesk"
-
-busybox wget -q -O - "${URL}?query=${query}${end}" > $TMP
-
 echo "Updating datapoints..."
-{ jq -r '.entries[] | (.[0] | tostring) + " " + (.[1] | tostring)' $TMP; } \
-  | while read ts price
-do
-  date=$(date +%Y-%m-%d -d "@${ts%%???}")
-  printf '[new Date("%s"), %.6f],\n' $date $price
-done \
+ash days-l.sh | jq '.Data[] | .TIMESTAMP, .CLOSE' \
+  | paste - - \
+  | while read t p r
+    do
+      echo $(date -d @$t +%Y-%m-%d) $p
+    done > /tmp/XBX-proc
+sed -E 's/([^ ]+) ([^ ]+)$/[new Date("\1"), \2],/' /tmp/XBX-proc \
   | grep . > /tmp/datapoints-$$ && echo ...datapoints update done. || EXIT=1
 
 rm $TMP
