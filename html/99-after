@@ -61,6 +61,15 @@ between Zorinaq's data and this site.
 </p>
 
 <p>
+Other data available here:
+<ul>
+<li><a href="days.json">days.json</a></li>
+<li><a href="datapoints.txt">datapoints.txt</a></li>
+<li><a href="datapoints-blocks.txt">datapoints-blocks.txt</a></li>
+</ul>
+</p>
+
+<p>
 The notable change compared to the original is that two ancient
 datapoints were added and they show that the genesis block was mined
 on 2009-01-03 and until 2009-10-04 (the day before the first

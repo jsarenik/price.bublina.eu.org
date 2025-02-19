@@ -26,6 +26,8 @@ cp public/yearly-low.html public/low.html
 #./update-headers.sh > public/_headers
 ./contrib/datacompare.sh > public/datacompare.txt
 ./contrib/wgetcompare.sh > public/wgetcompare.txt
+cp datapoints public/datapoints.txt
+cp datapoints-blocks public/datapoints-blocks.txt
 
 test "$RUN_BROTLI" = "1" && {
   echo Running brotli
