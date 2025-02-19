@@ -7,6 +7,8 @@
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
 cd "$BINDIR" || exit
 date
+mkdir public
+cp -a public-populate/* public/
 ./days.sh > public/days.json
 ./update-datapoints.sh
 #./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
