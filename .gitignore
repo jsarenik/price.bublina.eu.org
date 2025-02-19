@@ -3,6 +3,7 @@ public/*.csv
 public/_headers
 public/datacompare.txt
 public/wgetcompare.txt
+public/days.json
 datapoints.csv
 datapoints-inline.csv
 datapoints-monthly
