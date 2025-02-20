@@ -29,5 +29,7 @@ After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
 After 2022-05-18 the BPI v1 API has gaps, so the exchange rate is from the CoinDesk Bitcoin XBX index (currently https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&amp;...).
 For a while I was pulling data from the "BPI v3 API" (https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...) but it was disabled on 2024-11-24 so I switched to the Bitcoin XBX index URL.
 
+After 2025-02-07 there is no clear API where Coindesk publishes the XBX index, so I switched to the cryptocompare BTC price in USD, using the open price of each day (https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&amp;tsym=USD&amp;limit=...).
+
     
 
