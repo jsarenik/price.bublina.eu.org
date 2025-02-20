@@ -1,1 +1,1 @@
-openssl dgst -sha384 -binary bootstrap.min.css | openssl base64 -A
+openssl dgst -sha384 -binary bulma.min.css | openssl base64 -A
