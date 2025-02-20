@@ -17,7 +17,8 @@ EOF
 
 echo "Updating datapoints..."
 {
-test -s public/days.json && cat public/days.json || ash days-l.sh
+test -s public/days.json || ash days-l.sh
+cat public/days.json
 } | jq '.Data[] | .TIMESTAMP, .CLOSE' \
   | paste - - \
   | sed '$d' \

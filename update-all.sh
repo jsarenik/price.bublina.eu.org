@@ -9,7 +9,7 @@ cd "$BINDIR" || exit
 date
 mkdir public
 cp -a public-populate/* public/
-./days.sh > public/days.json
+./days.sh # updates public/dates.json if non-empty result
 ./update-datapoints.sh
 #./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
 ./update-blockdata.sh
