@@ -1,6 +1,6 @@
 #!/bin/sh
 
-limit=${1:-5}
+limit=${1:-8}
 marke=sda
 instr=XBX
 
