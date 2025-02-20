@@ -10,8 +10,8 @@ date
 mkdir public
 cp -a public-populate/* public/
 ./days.sh # updates public/dates.json if non-empty result
-./update-datapoints.sh
-#./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
+#./update-datapoints.sh
+./contrib/dataget.sh > datapoints; sed -i '$d' datapoints
 ./update-blockdata.sh
 ./gen-inline.sh
 ./gen-inline-loglog.sh
