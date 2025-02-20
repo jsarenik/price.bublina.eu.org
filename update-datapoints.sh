@@ -16,8 +16,11 @@ EOF
 }
 
 echo "Updating datapoints..."
-ash days-l.sh | jq '.Data[] | .TIMESTAMP, .CLOSE' \
+{
+test -s public/days.json && cat public/days.json || ash days-l.sh
+} | jq '.Data[] | .TIMESTAMP, .CLOSE' \
   | paste - - \
+  | sed '$d' \
   | while read t p r
     do
       echo $(date -d @$t +%Y-%m-%d) $p
