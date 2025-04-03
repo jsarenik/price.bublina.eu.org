@@ -70,6 +70,7 @@ Other data available here:
 <ul>
 <li><a href="days.json">days.json</a></li>
 <li><a href="datapoints.txt">datapoints.txt</a></li>
+<li><a href="datapoints-tail.txt">datapoints-tail.txt</a></li>
 <li><a href="datapoints-blocks.txt">datapoints-blocks.txt</a></li>
 </ul>
 </p>

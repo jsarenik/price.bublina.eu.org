@@ -27,6 +27,7 @@ cp public/yearly-low.html public/low.html
 ./contrib/datacompare.sh > public/datacompare.txt
 ./contrib/wgetcompare.sh > public/wgetcompare.txt
 cp datapoints public/datapoints.txt
+tail datapoints public/datapoints-tail.txt
 cp datapoints-blocks public/datapoints-blocks.txt
 
 test "$RUN_BROTLI" = "1" && {
