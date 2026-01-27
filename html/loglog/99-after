@@ -3,10 +3,10 @@
 <center>
 <div class="control">
   <form id="scales">
-      <input id='ylog' type="button" value="y log scale" onclick="setLogScale('y', true)">
-      <input id='ylinear' type="button" value="y linear scale" onclick="setLogScale('y', false)">
-      <input id='xlog' type="button" value="x log scale" onclick="setLogScale('x', true)">
-      <input id='xlinear' type="button" value="x linear scale" onclick="setLogScale('x', false)">
+      <input id='ylog' class="button" type="button" value="y log scale" onclick="setLogScale('y', true)">
+      <input id='ylinear' class="button" type="button" value="y linear scale" onclick="setLogScale('y', false)">
+      <input id='xlog' class="button" type="button" value="x log scale" onclick="setLogScale('x', true)">
+      <input id='xlinear' class="button" type="button" value="x linear scale" onclick="setLogScale('x', false)">
   </form>
 </div>
       <div>Current scales: <span id="description"></span></div>
