@@ -7,7 +7,8 @@
 a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; BINDIR=$(cd "$a" || exit; pwd)
 cd "$BINDIR" || exit
 date
-mkdir public
+rm -rf /tmp/ppp
+mkdir public || mkdir /tmp/ppp
 cp -a public-populate/* public/
 ./days.sh # updates public/dates.json if non-empty result
 #./update-datapoints.sh
