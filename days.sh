@@ -1,8 +1,8 @@
 #!/bin/sh
 
 limit=${1:-8}
-marke=ccix
-instr=BTC-USD
+marke=sda
+instr=XBX-USD
 
 safecat() (
   tmp=$(mktemp)
