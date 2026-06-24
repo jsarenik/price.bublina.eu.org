@@ -52,7 +52,7 @@ After 2025-02-07 there is no clear API where Coindesk publishes the XBX index, s
 
 <p>
 After 2026-06-20 my script hit the 100 calls/month API rate limit of cryptocompare. So I <em>tried</em> to buy an API plan with higher limits but it proved impossible as their website proved completely broken. So I switched to Coindesk's CCIX reference pricing of BTC-USD using the open price of each day
-(https://data-api.cryptocompare.com/index/cc/v1/historical/<wbr>days?market=ccix&amp;instrument=BTC-USD&amp;groups=OHLC&amp;limit=...)
+(<span style="font-size: xx-small;" class="word-wrap">https://data-api.cryptocompare.com/index/cc/v1/historical/<wbr>days?market=ccix&amp;instrument=BTC-USD&amp;groups=OHLC&amp;limit=...</span>)
 </p>
 
 <hr>
