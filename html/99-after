@@ -47,7 +47,7 @@ For a while I was pulling data from the "BPI v3 API" (<span style="font-size: xx
 </p>
 
 <p>
-After 2025-02-07 there is no clear API where Coindesk publishes the XBX index, so I switched to the cryptocompare BTC price in USD, using the open price of each day (https://min-api.cryptocompare.com/data/v2/<wbr>histoday?fsym=BTC&amp;tsym=USD&amp;limit=...).
+After 2025-02-07 there is no clear API where Coindesk publishes the XBX index, so I switched to the cryptocompare BTC price in USD, using the open price of each day (<span style="font-size: xx-small;" class="word-wrap">https://min-api.cryptocompare.com/data/v2/<wbr>histoday?fsym=BTC&amp;tsym=USD&amp;limit=...</span>).
 </p>
 
 <p>
