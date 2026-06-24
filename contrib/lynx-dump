@@ -1,5 +1,6 @@
    This is the most comprehensive all-time Bitcoin price history chart you
-   will find online. Updated daily. The chart is interactive:
+   will find online, with price data starting in 2009. Updated daily. The
+   chart is interactive:
      * Zoom: click-drag
      * Pan: shift-click-drag
      * Restore zoom level: double-click
@@ -14,20 +15,31 @@
    using the daily volume-weighted trading price of the second Bitcoin
    exchange, [3]BitcoinMarket.com ([4]PayPal USD trades). The owner,
    dwdollar, actually started operating it on [5]2010-03-17, however
-   trading data for the first few weeks is--to my knowledge--not
-   available.
+   trading data for the first few weeks is—to my knowledge—not available.
 
    After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
    ([6]https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07
    -18&end=2022-05-17).
 
-   After 2022-05-18 the BPI v1 API has gaps, so the exchange rate is from
-   the [7]CoinDesk Bitcoin XBX index (currently
-   https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&
-   ...). For a while I was pulling data from the "BPI v3 API"
-   (https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...)
-   but it was disabled on 2024-11-24 so I switched to the Bitcoin XBX
-   index URL.
+   After 2022-05-18 the BPI v1 API has gaps, so I switched to the "BPI v3
+   API" (https://www.coindesk.com/pf/api/v3/
+   content/fetch/chart-api?query=...). But it was disabled on 2024-11-24
+   so I then switched to the Bitcoin XBX index
+   (https://production.api.coindesk.com/v2/
+   tb/price/values/BTC?interval=1d&...).
+
+   After 2025-02-07 there is no clear API where Coindesk publishes the XBX
+   index, so I switched to the cryptocompare BTC price in USD, using the
+   open price of each day (https://min-api.cryptocompare.com/data/v2/
+   histoday?fsym=BTC&tsym=USD&limit=...).
+
+   After 2026-06-20 my script hit the 100 calls/month API rate limit of
+   cryptocompare. So I tried to buy an API plan with higher limits but it
+   proved impossible as their website proved completely broken. So I
+   switched to Coindesk's CCIX reference pricing of BTC-USD using the open
+   price of each day
+   (https://data-api.cryptocompare.com/index/cc/v1/historical/
+   days?market=ccix&instrument=BTC-USD&groups=OHLC&limit=...)
 
 References
 
@@ -37,4 +49,3 @@ References
    4. https://api.bitcoincharts.com/v1/csv/bcmPPUSD.csv.gz
    5. https://bitcointalk.org/index.php?topic=20.msg748#msg748
    6. https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17
-   7. https://indices.coindesk.com/indices
