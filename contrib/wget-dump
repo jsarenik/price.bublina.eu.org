@@ -1,4 +1,4 @@
-chart you will find online, with price data starting in 2009. Updated daily.
+chart you will find online, with price data starting in October 2009. Updated daily. Notice the logarithmic scale on the price axis which is essential to represent all equally important boom-and-bust cycles.
 The chart is interactive:
 
     Zoom: click-drag
@@ -26,10 +26,12 @@ however trading data for the first few weeks is—to my knowledge—not availabl
 After 2010-07-18 the exchange rate is from the CoinDesk BPI v1 API
 (https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-18&end=2022-05-17).
 
-After 2022-05-18 the BPI v1 API has gaps, so the exchange rate is from the CoinDesk Bitcoin XBX index (currently https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&amp;...).
-For a while I was pulling data from the "BPI v3 API" (https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...) but it was disabled on 2024-11-24 so I switched to the Bitcoin XBX index URL.
+After 2022-05-18 the BPI v1 API has gaps, so I switched to the "BPI v3 API" (https://www.coindesk.com/pf/api/v3/content/fetch/chart-api?query=...). But it was disabled on 2024-11-24 so I then switched to the Bitcoin XBX index (https://production.api.coindesk.com/v2/tb/price/values/BTC?interval=1d&amp;...).
 
 After 2025-02-07 there is no clear API where Coindesk publishes the XBX index, so I switched to the cryptocompare BTC price in USD, using the open price of each day (https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&amp;tsym=USD&amp;limit=...).
+
+After 2026-06-20 my script hit the 100 calls/month API rate limit of cryptocompare. So I tried to buy an API plan with higher limits but it was impossible as their website proved completely broken. So I switched to Coindesk's CCIX reference pricing of BTC-USD using the open price of each day
+(https://data-api.coindesk.com/index/cc/v1/historical/days?market=ccix&amp;instrument=BTC-USD&amp;groups=OHLC&amp;limit=...)
 
     
 
